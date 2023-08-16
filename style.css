@@ -271,8 +271,7 @@ nav a{
     margin-right: 10%;
     padding: 1vh;
     box-sizing: border-box;
-    /* backdrop-filter: brightness(60%); */
-    backdrop-filter:blur(40px) contrast(65%);
+    background-color:#2b3a5589;
     margin: 4vh auto 10vh;
     border-radius: 7px;
 }
