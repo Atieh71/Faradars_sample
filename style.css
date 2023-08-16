@@ -1,0 +1,1907 @@
+@font-face {
+    font-family: Vasir;
+    src: url(Font-Farsi/Vazir-Regular.woff) format("woff");
+}
+
+body{
+    font-family: Vasir;
+    direction: rtl;
+    text-align: center;
+    margin: 0;
+
+}
+section{
+    padding: 1vh 3px;
+    box-sizing: border-box;
+    width:80%;
+    margin-right:10%;
+}
+.error{
+    display:none;
+    margin-top: 5vh;
+    width: 80%;
+    margin-right: 10%;
+    border: 1.5px solid #071952;
+    border-radius: 5px;
+    box-shadow:4px 4px 12px rgb(75, 69, 143);
+    text-align: center;
+    padding: 3vh 2vh;
+    box-sizing: border-box;
+}
+.error img{
+    width: 60%;
+}
+.welcome{
+    position: absolute;
+    margin-top: 10vh;
+    width: 40%;
+    margin-right: 30%;
+    padding: 1vh;
+    box-sizing: border-box;
+    border: 2px solid #086b45;
+    box-shadow: 5px 5px #0c902647;
+    border-radius: 5px;
+    background-color: #fff;
+    z-index: 100;
+}
+.welcome button{
+    width: 100%;
+    text-align: left;
+    border: none;
+    background: transparent;
+    color: #071952;
+    padding: 1vh;
+    box-sizing: border-box;
+    cursor: pointer;
+}
+.welcome h4{
+    margin-top: 4vh;
+    color: #281068;
+}
+.welcome h5{
+    margin-top: 2vh;
+    color: #0d3e0b;
+    font-size: 16px;
+}
+/* ////////////////////////////////////////////navbar section////////////////////////////////////////////  */
+.navBar{
+    width: 100%;
+    margin-right: 0;
+    background-color: #fff;
+    position: sticky;
+    top:0;
+    z-index: 10;
+    border-bottom: 2px solid rgba(150, 168, 187, 0.281);
+
+}
+nav{
+   width: 80%;
+   margin-right:10%;
+   padding: 0.2vh;
+   box-sizing: border-box;
+   display: flex;
+   align-items: center;
+
+}
+nav a{
+    flex-grow: 2;
+}
+.navSearched{
+    flex-grow: 7;
+    padding: 1vh;
+    box-sizing: border-box;
+    border: 2px solid rgba(128, 128, 128, 0.662);
+    border-radius: 5px;
+    margin-right: 2%;
+}
+.sidebarButton{
+   width:40px;
+   background:none;
+   border: none;
+   display: none;
+}
+.sidebarContainer{
+    position:absolute;
+    right:0;
+    top:0;
+    z-index: 1000;
+    padding: 4vh;
+    box-sizing: border-box;
+    width: 50%;
+    height: 80vh;
+    background-color: #fff;
+    text-align: right;
+    border: 2px solid rgba(128, 128, 128, 0.662);
+    display: none;
+
+}
+.sidebar{
+    width: 100%;
+    margin-right: 0;
+}
+.sidebar button{
+    width:40px;
+    background:none;
+    border: none;
+}
+.sidebar div{
+    display: block;
+    padding-top: 4vh;
+    padding-bottom: 4vh;
+    box-sizing: border-box;
+}
+.sidebar div a{
+    text-decoration: none;
+    color: rgb(85, 96, 106);
+}
+.a_logo{
+    padding: 0.5vh;
+    box-sizing: border-box;
+    text-decoration: none;
+    width: 5%;
+    text-align: right;
+}
+.a_logo img{
+    width:70%;
+}
+.whiteButton{
+    width:3% ;
+    background: transparent;
+    border: 1.5px solid #30A2FF;
+    text-decoration: none;
+    border-radius: 3px;
+    color: #30A2FF;
+    padding: 1vh;
+    box-sizing: border-box;
+    font-size: small;
+    font-weight: bolder;
+    margin-right: 1%;
+
+}
+
+.navSubmit input[type=text]{
+    background: transparent;
+    border: none;
+    border-radius: 3px;
+    color:black;
+    padding: 1vh;
+    box-sizing: border-box;
+    font-size: small;
+    font-weight: bolder;
+}
+.a_teaching{
+    width: 4%;
+    margin-right: 3%;
+    text-align: center;
+    text-decoration: none;
+    color: black;
+    font-size: 14px;
+    padding: 1vh;
+    box-sizing: border-box;
+}
+.blueButton{
+    width:3% ;
+    margin-right: 2%;
+    background-color: #30A2FF;
+    border: 1.5px solid #30A2FF;
+    border-radius: 3px;
+    color: #fff;
+    padding: 1vh;
+    box-sizing: border-box;
+    font-size: 14px;
+    font-weight: lighter;
+}
+.navAccount{
+    text-decoration: none;
+    width:3% ;
+    color: black;
+    margin-right: 2%;
+    padding: 1vh;
+    box-sizing: border-box;
+    font-size: 14px;
+    font-weight: lighter;
+}
+.navAccount label{
+    cursor: pointer;
+}
+
+/* ////////////////////////////////////////////hero section////////////////////////////////////////////  */
+#hero{
+    width: 100%;
+    margin: 0;
+    padding: 1vh;
+    box-sizing: border-box;
+    display: inline-block;
+    font-size: medium;
+    font-weight: bolder;
+    background-image: url(images/edited\ yellow.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+
+}
+
+#hero h3{
+    text-align: center;
+    margin-top: 6vh;
+    margin-bottom: 3vh;
+    color: #fff;
+    font-size: 18px;
+    font-weight: normal;
+
+}
+.heroBox{
+    width: 44%;
+    margin-right: 28%;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.searchContainer{
+    flex: 79%;
+    background-color: #fff;
+    padding: 1vh;
+    box-sizing: border-box;
+    border: 2px solid rgba(128, 128, 128, 0.662);
+    border-radius: 5px;
+}
+.searchField{
+    width: 82%;
+    margin-right: 3%;
+    border: none;
+    outline: none;
+    background: transparent;
+
+}
+
+#find{
+    width: 20%;
+    background-color: rgba(0, 128, 0, 0.832);
+    border: 1.5px solid rgba(0, 128, 0, 0.775);
+    border-radius: 3px;
+    color: #fff;
+    padding: 1vh;
+    box-sizing: border-box;
+    font-size: 17px;
+    font-weight:lighter;
+    margin-right: 1%;
+}
+
+#heroContainer{
+    width: 80%;
+    margin-right: 10%;
+    padding: 1vh;
+    box-sizing: border-box;
+    /* backdrop-filter: brightness(60%); */
+    backdrop-filter:blur(40px) contrast(65%);
+    margin: 4vh auto 10vh;
+    border-radius: 7px;
+}
+
+#heroContainer div{
+    margin:2vh auto;
+}
+
+#heroContainer label{
+    width: 100%;
+    background: none;
+    border: none;
+    color: azure;
+    padding: 0.3vh;
+    box-sizing: border-box;
+    text-align: center;
+    border: none;
+    outline: none;
+    font-weight: lighter;
+}
+
+
+ /* ////////////////////////////////////////////body section////////////////////////////////////////////  */
+
+ 
+#body{
+    width: 70%;
+    margin-right: 15%;
+    padding: 1vh;
+    box-sizing: border-box;
+}
+#body h3{
+    text-align: center;
+    margin:5vh auto;
+    color:black;
+    font-size: large;
+    font-weight:bold;
+}
+
+#body .subContainer a{
+
+    padding: 1vh 0.5vh;
+    box-sizing: border-box; 
+    text-decoration: none;
+    text-align: center;
+    color: black;
+}
+
+#body .subContainer a img{
+    width: 50%;
+}
+#body .subContainer a p{
+    width: 80%;
+    margin-right: 10%;
+    margin-top: 1.5vh;
+    font-size: 14px;
+    font-weight:normal;
+
+}
+
+/* ///////////////////////////////////////////////slide show//////////////////////////////////////////////// */
+#slideShow{
+    width: 100%;
+    margin-right: 0;
+    margin-top: 5vh;
+    margin-bottom: 5vh;
+}
+#slideShow h5{
+    width: 80%;
+    margin-right: 10%;
+    text-align: right;
+    font-size: 20px;
+}
+
+.carousel-inner{
+    width: 85%;
+    margin-right: 7.5%;
+}
+.card{
+    padding: 1vh;
+    box-sizing: border-box;
+    border: none;
+    flex: 25%;
+}
+.card-deck {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 3vh;
+    box-sizing: border-box;
+}
+.card-text{
+    text-align: right;
+    font-size: 16px;
+    margin-top: 2vh;
+}
+.card .card-footer{
+    margin-top: 3vh;
+    padding: 0;
+    padding-right: 0.5vh;
+    box-sizing: border-box;
+    display: flex;
+    align-content: space-between;
+}
+.card-footer .labelFooter{
+    width: 80%;
+    padding: 1vh;
+    box-sizing: border-box;
+    text-align: right;
+
+}
+.card-footer .iconFooter{
+    text-align: center;
+    width: 20%;
+    background-color: #30a2ffb1;
+    padding: 1vh;
+    box-sizing: border-box;
+    border-bottom-left-radius: 7px;
+    cursor: pointer;
+}
+.carousel-control-next,
+.carousel-control-prev , 
+.carousel-indicators {
+    filter: invert(100%);
+}
+.card a{
+text-decoration: none;
+color: black;
+}
+
+/*  ///////////////////////////////////////before footer/////////////////////////////////////////////////  */
+
+#beforeFooter{
+    width: 100%;
+    margin: 0;
+}
+
+.TemporaryAd{
+    padding: 2vh;
+    box-sizing: border-box;
+    background-color: #071952;
+}
+.TemporaryAd h5{
+    color: #fff;
+    font-size: 18px;
+    margin-top: 5vh;
+    margin-bottom: 5vh;
+}
+.TemporaryAd button{
+    margin-bottom: 5vh;
+    width: 10%;
+    font-size: 14px;
+    font-weight: lighter;
+}
+.PermanentAd{
+    width: 80%;
+    margin-right: 10%;
+    padding: 2vh;
+    box-sizing: border-box;
+    display: flex;
+    flex-wrap: wrap;
+}
+.PermanentAd div{
+    padding: 1vh;
+    box-sizing: border-box;
+    flex:20%;
+}
+.PermanentAd div img{
+   width: 40%;
+}
+.PermanentAd label{
+    width: 100%;
+    font-size: 14px;
+}
+
+
+
+
+/* ////////////////////////////////////////////footer section////////////////////////////////////////////  */
+
+#footer{
+    width: 100%;
+    margin-right: 0;
+    background-color: rgba(182, 184, 186, 0.245);
+    padding:3vh 3vh;
+    box-sizing: border-box;
+
+}
+.footerContainer{
+    text-align: center;
+    padding: 1vh;
+    box-sizing: border-box;
+    width: 80%;
+    margin-right: 10%;
+}
+.footerSubContainer{
+    display: flex;
+    flex-wrap: wrap;
+    align-content: center;
+    align-items: center;
+}
+.footerTag{
+    padding: 2vh;
+    box-sizing: border-box;
+    flex:30%;
+    margin-top: 2vh;
+}
+.footerTag a{
+    text-decoration: none;
+}
+.footerTag a p{
+    color: black;
+    font-size: 16px;
+    font-weight: bold;
+    margin-top: 2vh ;
+}
+
+.footerContainer h5{
+    width: 100%;
+    margin-bottom: 2vh;
+    display: inline-block;
+}
+.footerContainer input{
+    width: 55%;
+    margin-right: 5%;
+    border: 1px solid lightgray;
+    border-radius: 3px;
+    padding: 1vh;
+    box-sizing:border-box;
+    font-size: 16px;
+}
+.footerContainer button{
+    width: 20%;
+}
+.footerNews{
+    padding: 1vh;
+    box-sizing: border-box;
+    flex:40%;
+    margin-top: 2vh;
+}
+.footerLogos{
+    padding: 1vh;
+    box-sizing: border-box;
+    flex:30%;
+    margin-top: 2vh;
+}
+.footerLogo1{
+    width: 45%;
+    margin-right: 27.5%;
+    text-align: center;
+    padding: 1vh;
+    box-sizing: border-box;
+}
+.footerLogo1 img{
+    width: 100%;
+}
+.footerLabel{
+    font-size: 13px;
+    font-weight: lighter;
+    padding: 1vh;
+    box-sizing: border-box;
+}
+
+.footerLogo2{
+    width: 70%;
+    margin-right: 15%;
+    padding: 1vh;
+    box-sizing: border-box;
+}
+.footerLogo2 img{
+    width: 35%;
+    margin-right: 4%;
+}
+
+
+
+/* ///////////adver section////////// */
+.adver a{
+    text-decoration: none;
+}
+.adver img{
+    width: 70%;
+}
+.adver2{
+    padding: 2vh;
+    box-sizing: border-box;
+    margin-bottom: 4vh;
+}
+.adver button{
+    width: 40%;
+    padding: 2vh;
+    box-sizing: border-box;
+}
+.adverText{
+    text-align: right;
+    margin-top: 10vh;
+}
+.adverText h4{
+    font-weight: bold;
+    margin-bottom: 3vh;
+}
+.adverText p{
+    color: dimgrey;
+    margin-bottom: 3vh;
+}
+
+
+
+
+/* ////////////////////////////////////////////////////////////////////////////////Form/////////////////////////////////////////////////////////////////////////// */
+.sure{
+    position: absolute;
+    margin-top: 20vh;
+    width:40%;
+    margin-right: 30%;
+    border: 3px solid #526D82;
+    background-color: #f0f6fb;
+    border-radius: 5px;
+    padding: 2vh;
+    box-sizing: border-box;
+}
+.sure .yes{
+    margin-top: 2vh;
+    width: 15%;
+    padding: 1vh;
+    box-sizing: border-box;
+    font-size: 14px;
+    font-weight: bold;
+    border: 2px solid #59C1BD;
+    background-color: #CFF5E7;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.sure .no{
+    margin-top: 2vh;
+    width: 15%;
+    padding: 1vh;
+    box-sizing: border-box;
+    font-size: 14px;
+    font-weight: bold;
+    border: 2px solid #FF74B1;
+    background-color: #FFD6EC;
+    border-radius: 5px;
+    margin-right: 5%;
+    cursor: pointer;
+
+}
+.sure .labelR{
+    display: inline-block;
+    width: 40%;
+    text-align: right;
+    margin-right: 0;
+    padding: 0.5vh;
+    box-sizing: border-box;
+    margin-top: 2vh;
+
+}
+.sure .labelL{
+    display: inline-block;
+    width:40%;
+    margin-right: 18%;
+    text-align: left;
+    padding: 0.5vh;
+    box-sizing: border-box;
+    color: #071952;
+    margin-top: 2vh;
+}
+#form{
+    padding:0;
+    width:100%;
+    margin-right: 0;
+}
+
+.formNav{
+    width: 100%;
+    border-bottom: 2px solid rgba(150, 168, 187, 0.281);
+    padding: 0.3vh;
+    padding-top: 1vh;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+ }
+ #form_a{
+    flex:10%;
+    margin-right: 1%;
+}
+#form_a img{
+    width: 10%;
+}
+
+.form-pic-container{
+    display: flex;
+    align-items: flex-start;
+}
+
+.formContainer{
+    width: 45%;
+    margin-right: 2%;
+    padding: 1vh;
+    box-sizing: border-box;
+    display: none;
+
+}
+.formContainer2{
+    width: 45%;
+    margin-right: 2%;
+    padding: 1vh;
+    box-sizing: border-box;
+    display: inline-block;
+}
+.returnButton{
+    text-decoration: none;
+    color: rgb(128, 128, 128);
+    display: flex;
+    justify-content: start;
+    margin-right: 2%;
+
+}
+.singIn_logIn{
+    display: inline-block;
+    text-align: center;
+    width: 80%;
+    margin-right: 0%;
+}
+.singIn_logIn p {
+    display: inline-block;
+ 
+}
+.singIn_logIn a {
+    display: inline-block;
+    text-decoration: none;
+
+}
+
+.formPic{
+    width: 45%;
+    margin-right:3%;
+    display: inline-block;
+
+    }
+.formPic img{
+    width: 90%;
+    text-align: center;
+    margin-top: 2vh;
+}
+form{
+    margin-top: 2vh;
+}
+form hr{
+    width: 60%;
+    margin-right: 20%;
+    border-color: #07195290;
+}
+form h3{
+    text-align: center;
+    color:#071952;
+}
+
+
+form fieldset{
+    font-weight: bold;
+    width: 60%;
+    display: block;
+    padding: 0.5vh;
+    box-sizing: border-box;
+    border-radius: 5px;
+    margin-right: 20%;
+    margin-top: 2vh;
+    border:2px solid #9AC5F4;
+    background-color: rgba(230, 230, 250, 0);
+}
+form .inputStyle{
+    width: 100%;
+    height: 100%;
+    font-size: 16px;
+    font-weight: normal;
+    color: #071952;
+    padding: 1vh;
+    box-sizing: border-box;
+    background: none;
+    border: none;
+    outline: none;
+}
+
+form fieldset legend{
+    display:none;
+    margin-right: 5%;
+    text-align: end;
+    font-size: 14px;
+    font-weight: lighter;
+    color: #071952;
+}
+
+form input[type="button"]{
+    width: 60%;
+    margin-right: 20%;
+    margin-top: 4vh;
+    margin-bottom: 4vh;
+    text-align: center;
+    color: #071952;
+    background-color: #9ac6f436;
+    border:1px solid #9AC5F4;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: bold;
+    display: block;
+    padding: 2vh;
+    box-sizing: border-box;
+
+
+
+}
+form ::placeholder { 
+    color: #071952c6;
+    opacity: 1; 
+    font-size: 16px;
+  }
+
+
+ /* ////////////////////////////////////////////////////////////////////personal account//////////////////////////////////////////////////////////////////////// */
+
+
+ #bodyPersonaleAccount{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    top: 1vh;
+    width: 100%;
+    margin-right: 0;
+ }
+ #accountMenue{
+    flex: 16%;
+    margin-right: 0;
+    padding: 1vh;
+    box-sizing: border-box;
+ }
+ #accountMenue label{
+    width: 100%;
+ }
+ #accountInfo{
+    display: inline-block;
+    flex: 80%;
+    margin-right: 1%;
+    border: 2px solid rgba(150, 168, 187, 0.281);
+    border-radius: 5px;
+    text-align: right;
+    padding: 2vh;
+    box-sizing: border-box;
+ }
+
+ .iconMiddle{
+    vertical-align: middle;
+    color: rgba(68, 73, 73, 0.878);
+ }
+ #ProfileImg{
+    width: 25%;
+    margin-top: 2vh;
+
+ }
+ .accountPicDiv{
+    padding: 0.5vh;
+    box-sizing: border-box;
+    margin-bottom: 4vh auto 4vh;
+ }
+ .accountPicDiv #userEmail{
+    margin-bottom: 2vh;
+ }
+ .accountDiv{
+    text-align: right;
+    margin-right: 14%;
+    padding: 1vh;
+    box-sizing: border-box;
+
+ }
+ .accountDiv :hover{
+    cursor: pointer;
+    color: #30A2FF;
+
+ }
+ .accountDiv button{
+    border: none;
+    outline: none;
+    background: none;
+    margin-top: 2vh;
+    margin-bottom: 2vh;
+    color: rgba(43, 42, 42, 0.785);
+    font-size: 14px;
+ }
+ .blueColor{
+    color: #30A2FF;
+ }
+ .accountAddStyle{
+   border-left:4px solid #30A2FF;
+   color: #30A2FF;
+   background-color: #9ac6f447;
+ }
+
+.accountInfoTitle{
+    display: inline-block;
+    width:60%;
+    text-align: right;
+    margin-right: 5%;
+}
+.accountInfoContent{
+    border: 2px solid rgba(150, 168, 187, 0.281);
+    border-radius: 5px;
+    padding: 3vh;
+    box-sizing: border-box;
+    margin: 4vh auto 2vh;
+    width: 90%;
+}
+.accountInfoContent div{
+    margin-bottom: 2vh;
+}
+.accountInfoContent label{
+    font-size: 15px;
+    color: grey;
+    font-weight: lighter;
+}
+.accountInfoContent input,select{
+    width: 100%;
+    border: 2px solid rgba(150, 168, 187, 0.281);
+    border-radius: 5px;
+    padding: 0.5vh;
+    box-sizing: border-box;
+    margin-top: 0.5vh;
+    font-size: 14px;
+}
+.textAlign_rtl{
+    direction: rtl;
+    text-align: right;
+}
+.textAlign_ltr{
+    direction: ltr;
+    text-align: left;
+}
+.addEducationButt{
+    color: #30A2FF;
+    background: none;
+    font-size: 14px;
+    border: 1px solid #30A2FF;
+    border-radius: 5px;
+    padding: 1.5vh 2vh;
+    box-sizing: border-box;
+    margin-top: 2vh;
+    margin-right: 5%;
+
+}
+.educationContent {
+    width: 90%;
+    display: none;
+    border: none;
+    padding: 0.1vh;
+    box-sizing: border-box;
+    text-align:right;
+
+
+}
+.sub_EducationContent{
+    width: 100%;
+    display: none;
+    border: 2px solid rgba(150, 168, 187, 0.281);
+    border-radius: 5px;
+    margin-right: 0;
+    margin-left: 0;
+}
+.removeEducationButt{
+    background:none;
+    border: none;
+    outline: none;
+    width: 5%;
+
+}
+.accountNavButt{
+    border: none;
+    background: none;
+}
+
+#accountEducation{
+    flex: 80%;
+    display: block;
+    margin-right: 1%;
+    border: 2px solid rgba(150, 168, 187, 0.281);
+    border-radius: 5px;
+    text-align: right;
+    padding: 2vh;
+    box-sizing: border-box;
+    display: none;
+ }
+ #accountEducation .searchContainer{
+    width: 50%;
+ }
+
+
+
+ /* ///////////////////////////////////////////////////////////////////////////product//////////////////////////////////////////////////////////////// */
+ .bookmark{
+    text-decoration: none;
+    position: fixed;
+    left: 3%;
+    bottom: 5vh;
+    cursor: pointer;
+ }
+ .navBarProduct{
+    border-bottom: 2px solid rgba(150, 168, 187, 0.281);
+    background-color: #fff;
+
+ }
+ .productTitle {
+    background-color: #fff;
+    padding: 0.05vh;
+    box-sizing: border-box;
+    margin-bottom: 1vh;
+    font-weight: lighter;
+
+ }
+ .productTitle a{
+    text-decoration: none;
+
+ }
+ .productTitleDiv{
+    width: 100%;
+    text-align: right;
+    margin-bottom: 1vh;
+    padding: 1.2vh;
+    box-sizing: border-box;
+    border-bottom: 2px solid rgba(150, 168, 187, 0.281);
+ }
+ .productTitleDiv2{
+    width: 100%;
+    text-align: right;
+    box-sizing: border-box;
+    border-bottom: 2px solid rgba(150, 168, 187, 0.281);
+ }
+ .productTitleDiv2 a{
+    color:rgba(70, 69, 69, 0.77);
+ }
+ .productTitleDiv2 div{
+    display: inline-block;
+    padding: 1vh;
+    box-sizing: border-box;
+    margin-bottom: 0;
+ }
+ .productContent{
+    text-align: center;
+    width: 80%;
+    margin-right: 10%;
+    padding: 1vh;
+    box-sizing: border-box;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: start;
+ }
+ .productVideo {
+    flex: 70%;
+    display: inline-block;
+    text-align: center;
+
+ }
+ .productVideo video{
+   border-radius: 15px;
+ }
+ .productVideo h4{
+    font-weight: bolder;
+    margin-bottom: 3vh;
+ }
+ .productVideo h6{
+    font-weight: bolder;
+ }
+ .productCost{
+    display: inline-block;
+    border: 2px solid rgba(150, 168, 187, 0.281);
+    padding: 2vh;
+    box-sizing: border-box;
+    border-radius: 5px;
+    flex: 30%;
+    position: sticky;
+    top:80px;
+
+ }
+ .productCost div{
+    padding: 1vh;
+    box-sizing: border-box;
+ }
+ .productCost h5{
+    width: 85%;
+    margin-top: 3vh;
+    margin-right: 7.5%;
+    font-weight: bolder;
+
+ }
+ .costLabels{
+    width: 85%;
+    padding: 1vh;
+    box-sizing: border-box;
+    margin-right: 7.5%;
+ }
+ .costLabels_r{
+    width: 49%;
+    text-align: right;
+    font-weight: bolder;
+ }
+ .costLabels_l{
+    width: 49%;
+    text-align: left;
+    font-weight: lighter;
+
+ }
+ .productCost .blueButton{
+    width: 70%;
+    margin-top: 4vh;
+    margin-bottom: 4vh;
+    font-size: 16px;
+    font-weight: lighter;
+ }
+ .productText{
+    width: 95%;
+    margin-right: 3%;
+    text-align: right;
+    margin-top: 3vh;
+ }
+ .productPreview{
+    width: 95%;
+    margin-right: 3%;
+    text-align: right;
+    margin-top: 3vh;
+    margin-bottom: 3vh;
+ }
+ .productPreview div{
+   width:100% ;
+   display: flex;
+   padding: 2vh;
+   box-sizing: border-box;
+   margin-top: 2vh;
+   border: 2px solid rgba(150, 168, 187, 0.281);
+   border-radius: 5px;
+   cursor: pointer;
+   background-color: rgba(150, 168, 187, 0.058);
+ }
+ .productPreview label{
+    width: 80%;
+    flex-grow: 10;
+    margin-right: 10px;
+    cursor: pointer;
+ }
+ .productPreview i{
+    flex-grow: 1;
+    cursor: pointer;
+ }
+ .productPreview video{
+    width: 75%;
+    margin-right: 12.5%;
+ }
+ .productPreview .videoDiv{
+    background-color: #fff;
+    border: none;
+    margin-top: 0;
+    display: none;
+ }
+/* /////////////////////////////////////////////////////////////contact us////////////////////////////////////////////////////////////////// */
+
+
+#contact{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    text-align: right;
+}
+#address{
+    flex: 60%;
+    padding: 4vh 2vh;
+    box-sizing: border-box;
+}
+#address div{
+    margin-top: 2vh;
+}
+#address i{
+    width: 50px;
+    text-align: center;
+    color: black;
+    margin-right: 0;
+    padding: 1vh;
+    box-sizing: border-box;
+}
+#address label{
+    font-size: 16px;
+    font-weight: lighter;
+    padding: 0.5vh;
+    box-sizing: border-box;
+}
+#address p{
+    width: 70%;
+    font-size: 13px;
+    font-weight: lighter;
+    color: #2098fa;
+    cursor: pointer;
+    margin-right: 50px;
+    padding: 0.5vh;
+    box-sizing: border-box;
+}
+#message{
+    flex: 40%;
+    padding: 4vh 2vh;
+    box-sizing: border-box;
+}
+.messageDiv{
+    width: 50%;
+}
+#message input , textarea{
+    width: 100%;
+    border: 2px solid rgba(150, 168, 187, 0.281);
+    border-radius: 5px;
+    padding: 1vh;
+    box-sizing: border-box;
+    margin-top: 1vh;
+    margin-bottom: 1vh;
+}
+#message label{
+    font-weight: bold;
+}
+#message button{
+    width: 23%;
+}
+#message div{
+    margin-top: 2vh;
+}
+#embededMap{
+    margin-top: 3vh;
+    margin-bottom: 3vh;
+}
+#embededMap iframe{
+    width:60%;
+    height:40vh; 
+}
+#embededMap div{
+    width: 100%;
+}
+#afterFooter{
+    width: 100%;
+    margin-right: 0;
+    padding: 1vh;
+    box-sizing: border-box;
+    background-color: #79E0EE;
+}
+#afterFooter div{
+    padding: 1vh;
+    box-sizing: border-box;
+}
+#afterFooter div i{
+margin-right: 1%;
+color: #fff;
+}
+
+@keyframes colors{
+    25%{
+        background-color: #D0F5BE;
+    }
+    50%{
+        background-color: #BE6DB7;
+    }
+    75%{
+        background-color: #F7C8E0;
+    }
+    100%{
+        background-color:#79E0EE;
+    }
+
+}
+.colorRange{
+    animation-name: colors;
+    animation-duration: 10s;
+    animation-timing-function: ease;
+    animation-iteration-count: infinite;
+}
+
+
+/* //////////////////////////////////////////////////about us//////////////////////////////////////////////// */
+
+#aboutUsImage{
+    width: 25%;
+    margin-right: 37.5%;
+    margin-bottom: 3vh;
+    padding: 2vh;
+    box-sizing: border-box;
+}
+#aboutUsImage img{
+    width: 100%;
+}
+#aboutUsText{
+    text-align: right;
+    margin-bottom: 3vh;
+}
+#aboutUsText h5{
+    font-weight: bold;    
+    margin-top: 3vh;
+
+}
+#aboutUsText p{
+    text-align: justify;
+}
+
+.sendOpinion{
+    margin-top:3vh;
+    margin-bottom: 3vh;
+    border-bottom: 2px solid rgba(150, 168, 187, 0.281);
+    padding: 1vh;
+    box-sizing: border-box;
+}
+.opinonLabel{
+    width: 100%;
+    text-align: right;
+    display: flex;
+    flex-wrap: wrap;
+}
+.opinonLabel label{
+    flex: 10%;
+    text-align: right;
+    font-size: large;
+    font-weight: bold;
+    padding:1vh ;
+    box-sizing: border-box;
+}
+.opinonLabel input{
+    flex: 90%;
+    border: 2px solid rgba(150, 168, 187, 0.281);
+    border-radius: 7px;
+    padding: 1vh;
+    box-sizing: border-box;
+}
+.opinionText{
+    width: 100%;
+    text-align: right;
+    padding: 1vh;
+    box-sizing: border-box;
+    display: flex;
+    align-items: flex-start;
+}
+.opinionTextDiv img{
+    width: 70%;
+}
+.opinionTextDiv{
+    flex: 10%;
+}
+.opinionText input{
+    flex: 90%;
+    height: 15vh;
+    border: 2px solid rgba(150, 168, 187, 0.281);
+    border-radius: 7px;
+    padding: 1vh 1vh 8vh;
+    box-sizing: border-box;
+}
+.opinionButt{
+    text-align: left;
+    padding: 1vh;
+    box-sizing: border-box;
+}
+.opinionButt button{
+    width: 8%;
+    margin-left: 2%;
+    margin-top: 1vh;
+}
+.yourOpinion{
+    margin-bottom: 2vh;
+    background-color: rgba(123, 122, 121, 0.107);
+    border-radius: 7px;
+    padding: 2vh;
+    box-sizing: border-box;
+}
+.yourOpinion img{
+    width: 2%;
+    margin-right: 0;
+}
+.userN{
+    text-align: right;
+    padding: 1vh;
+    box-sizing: border-box;
+    display: flex;
+    align-items: flex-start;
+}
+.userN label{
+    width: 96%;
+    margin-right: 2%;
+    color: rgb(84, 83, 83);
+    font-weight: bold;
+}
+.userN i{
+    cursor: pointer;
+    font-size:20px;
+}
+.userOpinion label{
+    width: 100%;
+    text-align: right;
+    margin-right: 4%;
+    font-size: 14px;
+}
+.before{
+    display: none;
+}
+#accountOpinion{
+    flex: 80%;
+    margin-right: 2%;
+}
+.opinionContainer{
+    border: 2px solid rgba(150, 168, 187, 0.281);
+    border-radius: 5px;
+    padding: 2vh;
+    box-sizing: border-box;
+    margin: 4vh auto 2vh;
+    width: 100%;
+}
+/* /////////////////////////////////////teaching section/////////////////////////////////////////////////////// */
+.teachingR{
+text-align: right;
+padding: 2vh;
+box-sizing: border-box;
+margin-top: 2vh;
+}
+.teachingR button{
+    width: 50%;
+}
+.teachingL{
+text-align: center;
+padding: 2vh;
+box-sizing: border-box;
+margin-top: 2vh;
+}
+.teachingL button{
+    width: 50%;
+}
+.teachingL img{
+    width: 60%;
+}
+#teachingBody button{
+    width: 50%;
+    padding: 2vh;
+    box-sizing: border-box;
+}
+.teachDiv{
+    border: 2px solid rgba(128, 128, 128, 0.523);
+    border-radius: 7px;
+    margin-top: 6vh;
+    box-shadow:5px 5px rgba(185, 184, 184, 0.662);
+}
+
+
+
+/* /////////////////////////////////////////////media query////////////////////////////////////////////////////// */
+
+
+
+@media screen and (max-width : 300px){
+    .error{
+        display: inline-block;
+    }
+    section{
+        display: none;
+    }
+    #hero{
+        display: none;
+    }
+    #accountMenue{
+        display: none;
+    }
+    #accountInfo{
+        display: none;
+    }
+    #accountOpinion{
+        display: none;
+    }
+    .opinionContainer{
+        display: none;
+    }
+    #contact{
+        display: none;
+    }
+    .productContent{
+        display: none;
+    }
+    .sidebarContainer{
+        display: none;
+
+    }
+}
+/* ///////////nav////////// */
+@media screen and (max-width : 1200px) and (min-width : 300px) {
+    .a_logo{
+        display: none;
+    }
+}
+@media screen and (max-width : 1700px) and (min-width : 1300px) {
+    .navSearched{
+        flex-grow: 3;
+    }
+}
+@media screen and (max-width : 1540px) and (min-width : 1300px) {
+    nav .whiteButton{
+        display: none;
+    }
+}
+@media screen and (max-width : 1300px) and (min-width : 975px) {
+    nav .sidebarButton{
+        display: inline-block;
+    }
+    nav .whiteButton{
+        display: none;
+    }
+    nav .a_teaching{
+        display: none;
+    }
+}
+
+@media screen and (max-width : 975px) and (min-width : 650px){
+
+    nav .sidebarButton{
+        display: inline-block;
+    }
+    nav .whiteButton{
+        display: none;
+    }
+    nav .a_teaching{
+        display: none;
+    }
+    nav .blueButton{
+        display: none;
+    }
+    nav .navAccount{
+        display: none;
+    }
+    .accountNavButt{
+        display: none;
+    }
+    nav .a_logo{
+        flex-grow: 1;
+    }
+
+}
+@media screen and (max-width : 900px) and (min-width : 550px){
+
+    .sidebar div{
+        padding-top: 2vh;
+        padding-bottom: 2vh;
+    }
+}
+@media screen and (max-width : 550px) and (min-width : 300px){
+
+    .sidebar div{
+        padding-top: 2vh;
+        padding-bottom: 2vh;
+    }
+    .sidebarContainer{
+        width: 90%;
+    }
+}
+@media screen and (max-width : 900px) and (min-width : 300px) {
+   .navBar{
+       width: 100%;
+       margin-right: 0;
+       padding: 2vh;
+       box-sizing: border-box;
+    }   
+    nav .sidebarButton{
+        display: inline-block;
+    }
+    nav .whiteButton{
+        display: none;
+    }
+    nav .a_teaching{
+        display: none;
+    }
+    nav .blueButton{
+        display: none;
+    }
+    nav .navAccount{
+        display: none;
+    }
+    .accountNavButt{
+        display: none;
+    }
+    nav .a_logo{
+        margin-top: 1.6vh;
+        margin-right: 2%;
+        font-size: medium
+    
+    }
+    nav .a_logo img{
+        display: none;
+    }
+    nav .sidebarButton{
+        width:50px;
+    }
+.sure{
+    width: 90%;
+    margin-right: 5%;
+}
+.sure .yes, .sure .no{
+    width: 40%;
+}
+}
+    
+/* //////////hero/////// */
+
+@media screen and (max-width : 1100px) and (min-width : 750px) {
+    #hero .heroBox{
+        width: 64%;
+        margin-right: 18%;
+    }
+    #form_a img{
+        width: 15%;
+    }
+}
+@media screen and (max-width : 750px) and (min-width : 600px) {
+    #hero .heroBox{
+        width: 84%;
+        margin-right: 8%;
+    }
+    #form_a img{
+        width: 20%;
+    }
+    }
+@media screen and (max-width : 600px) and (min-width : 400px) {
+    #hero .heroBox{
+        width: 96%;
+        margin-right: 1.5%;
+    }
+    
+    #hero #find{
+        padding: 0.3vh;
+        box-sizing: border-box;
+        font-size: medium;
+    }
+    #form_a img{
+        width: 25%;
+    }
+}
+@media screen and (max-width : 400px) and (min-width : 300px) {
+    .heroBox {
+        width: 96%;
+        margin-right: 1.5%;
+    }
+    .searchContainer{
+        flex: 80%;
+    }
+    #find{
+        width:30%;
+        margin-right:35% ;
+        margin-top: 2vh;
+    }
+    .navSearched{
+        display: none;
+    }
+    #form_a img{
+        width: 30%;
+    }
+
+}
+@media screen and (max-width : 1400px) and (min-width : 920px) {
+     .card{
+        flex: 50%;
+    }
+}
+@media screen and (max-width : 920px) and (min-width : 650px){
+    .card{
+        flex: 100%;
+    }
+    #aboutUsImage{
+        width: 40%;
+        margin-right: 30%;
+        margin-bottom: 2vh;
+    }
+    .a_logo img{
+        width: 80%;
+    }
+}
+@media screen and (max-width : 650px) and (min-width : 300px){
+    .card{
+        flex: 100%;
+    }
+    #aboutUsImage{
+        width: 60%;
+        margin-right: 20%;
+        margin-bottom: 2vh;
+    }
+    .a_logo img{
+        width:100%;
+    }
+}
+
+@media screen and (max-width : 1400px) and (min-width : 420px){
+    .adver button{
+        width: 70%;
+    }
+    .TemporaryAd button{
+        width: 35%;
+    }
+}
+@media screen and (max-width : 420px) and (min-width : 300px){
+    .adver button{
+        width: 100%;
+    }
+    .TemporaryAd button{
+        width: 50%;
+    }
+}
+@media screen and (max-width : 1100px) and (min-width : 650px){
+    .PermanentAd div{
+        flex:33%;
+    }
+}
+@media screen and (max-width : 650px) and (min-width : 525px){
+    .PermanentAd div{
+        flex:50%;
+    }
+}
+@media screen and (max-width : 525px) and (min-width : 300px){
+    .PermanentAd div{
+        flex:100%;
+    }
+}
+@media screen and (max-width : 1400px) and (min-width : 1200px){
+    .footerLogo1{
+        width: 70%;
+        margin-right: 15%;
+    }
+    .footerTag{
+        flex:25%;
+    }
+    .footerNews{
+        flex:50%;
+    }
+    .footerLogos{
+        flex:25%;
+    }
+}
+@media screen and (max-width : 1200px) and (min-width : 300px){
+    .footerLogo1{
+        width: 40%;
+        margin-right: 30%;
+    }
+    .footerTag{
+        flex:100%;
+    }
+    .footerNews{
+        flex:100%;
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        align-items: center;
+    }
+    .footerNews input{
+        width: 100%;
+    } 
+    .footerNews button{
+        margin-top: 1vh;
+        width: 60%;
+    }
+    .footerLogos{
+        flex:100%;
+    }
+}
+@media screen and (max-width : 1300px) and (min-width : 730px){
+    #ProfileImg{
+        width: 15%;
+        margin-top: 2vh;
+    
+     }
+     .accountDiv{
+        margin-right: 2%;
+     }
+}
+    @media screen and (max-width : 730px) and (min-width : 300px){
+    #accountMenue{
+        flex: 100%;
+    }
+    #ProfileImg{
+        width: 20%;
+        margin-top: 2vh;
+    
+     }
+    #accountInfo{
+        flex: 100%;
+    } 
+    #accountEducation{
+        flex: 100%;
+    }  
+    #accountOpinion{
+        flex: 100%;
+    }
+    .accountDiv{
+        margin-right: 2%;
+     }
+}   
+    @media screen and (max-width : 1100px) and (min-width : 615px){
+
+        .opinionText .opinionTextDiv{
+            flex: 20%;
+        }
+        .opinionText input{
+            flex: 80%;
+        }
+        .opinonLabel label{
+            flex: 20%;
+        }
+        .opinonLabel input{
+            flex: 80%;
+        }
+        .opinionButt button{
+            width:30%;
+        }
+    }
+    @media screen and (max-width : 615px) and (min-width : 300px){
+        .opinonLabel label{
+            flex:100%;
+        }
+        .opinonLabel input{
+            flex: 80%;
+        }
+        .opinionText .opinionTextDiv{
+            display: none;
+        }
+        .opinionText input{
+            flex: 10%;
+            height: 10vh;
+            margin-right: 0;
+        }
+        .opinionButt button{
+            width:40%;
+        }
+        #aboutUsBody{
+            width: 100%;
+            margin-right: 0; 
+            padding: 1vh;
+            box-sizing: border-box; 
+        }
+    }
+    @media screen and (max-width : 1100px) and (min-width : 750px){
+        .yourOpinion img{
+            width:5%;
+        }
+    }
+    @media screen and (max-width : 750px) and (min-width : 300px){
+        .yourOpinion img{
+            width:10%;
+        }
+        
+    }
+    @media screen and (max-width : 1350px) and (min-width : 1060px){
+        #message button{
+            width:50%;
+        }
+    }
+    @media screen and (max-width : 1060px) and (min-width : 445px){
+        #address{
+            flex: 100%;
+        }
+        #message{
+            flex: 100%;
+        }
+        #message button{
+            width:50%;
+        }
+        #embededMap iframe{
+            width:100%;
+            height:25vh; 
+        }
+    }
+    @media screen and (max-width : 445px) and (min-width : 300px){
+        #contact{
+            width: 100%;
+            margin-right: 0;
+        }
+        #address{
+            flex: 100%;
+        }
+        #message{
+            flex: 100%;
+        }
+        #message button{
+            width:50%;
+        }
+        #embededMap iframe{
+            width:100%;
+            height:25vh; 
+        }
+    }
+    @media screen and (max-width : 1300px) and (min-width : 300px){
+        .formPic{display: none;
+        }
+        .formContainer{
+            width: 80%;
+            margin-right: 10%;
+            background-color: #e6fffd76;
+            border-radius: 8px;
+        }
+        .formContainer2{
+            width: 80%;
+            margin-right: 10%;
+            background-color: #e6fffd76;
+            border-radius: 8px;
+        }
+        .productVideo{
+            flex:100%;
+        }
+        .productCost{
+            flex:100%;
+        }
+    }
+    @media screen and (max-width : 1560px) and (min-width : 1320px){
+        #teachingBody button{
+          width: 60%;
+    }
+}
+    @media screen and (max-width : 1320px) and (min-width : 1022px){
+        #teachingBody button{
+          width: 80%;
+}
+}
+@media screen and (max-width : 1022px) and (min-width : 770px){
+    #teachingBody button{
+      width: 100%;
+}
+}
+
+@media screen and (max-width : 600px) and (min-width : 300px){
+    #teachingBody button{
+      width: 85%;
+}
+}
+@media screen and (max-width : 490px) and (min-width : 300px){
+    #teachingBody button{
+      width: 100%;
+}
+}

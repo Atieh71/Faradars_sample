@@ -1,0 +1,511 @@
+<!DOCTYPE html>
+<html lang="fa-IR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Faradars</title>
+
+    <!-- bootsrap link  -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+
+    <!-- css link  -->
+    <link rel="stylesheet" href="style.css">
+
+    <!-- font awesome script -->
+    <script src="https://kit.fontawesome.com/0229d508ab.js" crossorigin="anonymous"></script>
+
+
+</head>
+<body>
+    
+    <div class="error">
+        <p>عرض صفحه ی نمایشگر شما برای نمایش این سایت کوچکتر از اندازه ی مجاز است. لطفا صفحه ی نمایشگر را به حالت افقی تنطیم کنید.</p>
+        <img src="images/953661_2203.jpg" alt="">
+    </div>
+    <!-- //////////////////////////////////// navbar section /////////////////////////////////////////// -->
+    <section class="navBar">
+        <nav>
+            <button class="sidebarButton" onclick="activeSidebar()">
+                <i class='fas fa-bars' style='font-size:30px;color: rgb(86, 86, 86);'></i>
+            </button>
+            <a href="index.html" class="a_logo"> <img src="images/faradarslogo.svg" alt=""></a>
+
+            <a href="index.html#allEdu" type="submit" class="whiteButton" >همه آموزش ها</a>
+
+            <div class="navSearched">
+                <i class='iconMiddle fas fa-search' style='font-size:24px; color:dimgrey'></i>
+                <input onfocus="doSearch()" class="searchField navSearchedInput" type="search" placeholder="جستجوی آموزش ...">
+            </div>
+
+            <a href="teaching.html" class="a_teaching"><i class='iconMiddle fas fa-chalkboard-teacher' style='font-size:22px;'></i>  تدریس در فرادرس </a>
+
+            <!-- <button id="beforeLoginBut" onclick="signIn()" type="submit" class="blueButton" style="flex-grow: 2; display: none;">ورود / ثبت نام</button> -->
+
+            <a class="navAccount" href="personalAccount.html">
+                <i class='iconMiddle far fa-user-circle' style='font-size:24px'></i>
+                <label for="">حساب کاربری</label>
+            </a>
+        </nav>
+    </section>
+    <div class="sidebarContainer">
+    
+        <div class="sidebar"> 
+            <button onclick="deActiveSidebar()">
+                <i class="fa fa-close" style="font-size:24px;color:gray"></i>
+            </button>
+            <div >
+                <a href="personalAccount.html"><i class='far fa-user-circle iconMiddle' style='font-size:24px'></i> حساب کاربری </a>
+            </div>
+            <div>
+                <a href="index.html#allEdu" > <i class='far fa-folder-open iconMiddle' style='font-size:24px'></i>  همه آموزش ها </a>
+            </div>
+            <div>
+                <a href="teaching.html"><i class='iconMiddle fas fa-chalkboard-teacher' style='font-size:22px;'></i>   تدریس در فرادرس</a>
+            </div>
+            <div id="logOut">
+                <a href="form.html"><i class='fas fa-sign-out-alt iconMiddle' style='font-size:22px'></i> خروج از حساب کاربری </a>
+            </div>
+        </div>
+    
+    </div>
+    <section id="bodyPersonaleAccount">
+        <div id="accountMenue">
+            <div class="accountPicDiv">
+                <img id="ProfileImg" src="images/images.jfif" alt="">
+                <label id="userName" for=""> عطیه قلی پور </label>
+                <label id="userEmail" for="">Atieh_Gholipour@gmail.com</label>
+            </div>
+
+            <div id="Info" class="accountDiv accountAddStyle">   
+                <button class="blueColor addColor " onblur="deShowInfo()" onclick="showInfo()"><i class='far fa-user-circle iconMiddle' style='font-size:24px'></i>  اطلاعات کاربری </button>
+            </div>
+
+            <div id="myLesson" class="accountDiv">
+                <button onblur="deShowLesson()" onclick="showLesson()"><i class='fas fa-book iconMiddle' style='font-size:24px;'></i>   آموزش های من  </button>
+            </div>
+
+            <div id="Opinion" class="accountDiv">
+                <button onblur="deShowOpinion()" onclick="showOpinion()"><i class='far fa-comment iconMiddle' style='font-size:24px;'></i>  ثبت نظر  </button>
+            </div>
+
+            <div id="logOut" class="accountDiv">
+                <button onblur="deShowLogOut()" onclick="showLogOut()"><i class='fas fa-sign-out-alt iconMiddle' style='font-size:24px'></i> خروج از حساب کاربری </button>
+            </div>
+        </div>
+        <div id="accountInfo">
+            <div>
+                <label class="accountInfoTitle" for=""><i class='far fa-address-card iconMiddle' style='font-size:24px'></i> اطلاعات فردی </label>
+                <div class="accountInfoContent row">
+                    <div class="col-lg-3 col-md-4 col-sm-6">
+                        <label> نام </label>
+                        <input class="textAlign_rtl" type="text">
+                    </div>
+                    <div class="col-lg-3 col-md-4 col-sm-6">
+                        <label for=""> نام خانوادگی </label>
+                        <input class="textAlign_rtl" type="text">
+                    </div>
+                    <div class="col-lg-3 col-md-4 col-sm-6">
+                        <label for=""> شماره موبایل </label>
+                        <input id="mobileFixed" class="textAlign_ltr" type="phone">
+                    </div>
+                    <div class="col-lg-3 col-md-4 col-sm-6">
+                        <label for="">تاریخ تولد</label>
+                        <input class="textAlign_ltr" type="date">
+                    </div>
+                    <div  class="col-lg-3 col-md-4 col-sm-6">
+                        <label for=""> ایمیل </label>
+                        <input class="textAlign_ltr" type="email">
+                    </div>
+                    <div class="col-lg-3 col-md-4 col-sm-6">
+                        <label for=""> جنسیت </label>
+                         <select selected=" انتخاب جنسیت" name="" id="">
+                            <option style="display: none;" value="">جنسیت</option>
+                            <option value="">زن</option>
+                            <option value="">مرد</option>
+                            <option value="">تمایلی ندارم</option>
+                         </select>
+                         
+                    </div>
+                    <div  class="col-lg-3 col-md-4 col-sm-6">
+                        <label for=""> کد ملی</label>
+                        <input class="textAlign_ltr" type="number">
+                    </div>
+                </div>
+            </div>
+            <div>
+                <label class="accountInfoTitle" for=""><i class='far fa-map iconMiddle' style='font-size:24px'></i> محل سکونت </label>
+                <div class="accountInfoContent row">
+                    <div  class="col-lg-3 col-md-4 col-sm-6">
+                        <label for=""> استان </label>
+                        <select onchange="showCities()"  name="" id="provincy">
+                            <option style="display: none;" selected="انتخاب استان" value="">انتخاب استان</option>
+                            <option value="tehran">تهران</option>
+                            <option value="gilan">گیلان</option>
+                        </select>
+                    </div>
+                    <div  class="col-lg-3 col-md-4 col-sm-6">
+                        <label for=""> شهر </label>
+
+                        <select id="alternative" style="overflow-y: scroll;" >
+                            <option  selected="انتخاب شهر" style="display: none; overflow-y: scroll;" value="">انتخاب شهر</option>
+                        </select>
+
+
+                        <select id="tehran" style="display: none; overflow-y: scroll;" >
+                            <option  selected="انتخاب شهر" style="display: none; overflow-y: scroll;" value="">انتخاب شهر</option>
+                            <option value="">آبسرد</option>
+                            <option value="">آبعلی</option>
+                            <option value="">احمد آباد مستوفی</option>
+                            <option value="">ارجمند</option>
+                            <option value="">اسلامشهر</option>
+                            <option value="">اندیشه</option>
+                            <option value="">باغستان</option>
+                            <option value="">باقرشهر</option>
+                            <option value="">بومهن</option>
+                            <option value="">پاکدشت</option>
+                            <option value="">پردیس</option>
+                            <option value="">پرند</option>
+                            <option value="">پیشوا</option>
+                            <option value="">تهران</option>
+                            <option value="">جوادآباد</option>
+                            <option value="">چهاردانگه</option>
+                            <option value="">حسن آباد</option>
+                            <option value="">دماوند</option>
+                            <option value="">رباطکریم</option>
+                            <option value="">رودهن</option>
+                            <option value="">شاهدشهر</option>
+                            <option value="">شریف آباد</option>
+                            <option value="">شمشک</option>
+                            <option value="">شهریار</option>
+                            <option value="">صالحیه</option>
+                            <option value="">صباشهر</option>
+                            <option value="">صفادشت</option>
+                            <option value="">فردوسیه</option>
+                            <option value="">فرون آباد</option>
+                            <option value="">فشم</option>
+                            <option value="">فیروزکوه</option>
+                            <option value="">قدس</option>
+                            <option value="">قرچک</option>
+                            <option value="">کهریزک</option>
+                            <option value="">کیلان</option>
+                            <option value="">گلستان</option>
+                            <option value="">لواسان</option>
+                            <option value="">ملارد</option>
+                            <option value="">نسیم شهر</option>
+                            <option value="">نصیرشهر</option>
+                            <option value="">وحیدیه</option>
+                            <option value="">ورامین</option>
+
+                        </select>
+
+
+                        <select id="gilan" style="display: none; overflow-y:scroll;" >
+                            <option selected="انتخاب شهر" style="display: none; overflow-y: scroll;" value="">انتخاب شهر</option>
+                            <option value="">آستارا</option>
+                            <option value="">آستانه اشرفیه</option>
+                            <option value="">احمدسرگوراب</option>
+                            <option value="">اسالم</option>
+                            <option value="">اطاقور</option>
+                            <option value="">املش</option>
+                            <option value="">بازار جمعه</option>
+                            <option value="">پره سر</option>
+                            <option value="">بندر انزلی</option>
+                            <option value="">توتکابن</option>
+                            <option value="">جیرنده</option>
+                            <option value="">چابکسر</option>
+                            <option value="">چاف و چمخاله</option>
+                            <option value="">چوبر</option>
+                            <option value="">حویق</option>
+                            <option value="">خشکبیجار</option>
+                            <option value="">خمام</option>
+                            <option value="">دیلمان</option>
+                            <option value="">رانکوه</option>
+                            <option value="">رحیم آباد</option>
+                            <option value="">رستم آباد</option>
+                            <option value="">رشت</option>
+                            <option value="">رضوانشهر</option>
+                            <option value="">رودبار</option>
+                            <option value="">رودبنه</option>
+                            <option value="">رودسر</option>
+                            <option value="">سنگر</option>
+                            <option value="">سیاهکل</option>
+                            <option value="">شفت</option>
+                            <option value="">شلمان</option>
+                            <option value="">صومعه سرا</option>
+                            <option value="">فومن</option>
+                            <option value="">کلاچای</option>
+                            <option value="">کوچصفهان</option>
+                            <option value="">کومله</option>
+                            <option value="">کیاشهر</option>
+                            <option value="">گوراب زرمیخ</option>
+                            <option value="">لاهیجان</option>
+                            <option value="">لشت نشاء</option>
+                            <option value="">لنگرود</option>
+                            <option value="">لوشان</option>
+                            <option value="">لولمان</option>
+                            <option value="">لوندویل</option>
+                            <option value="">لیسار</option>
+                            <option value="">ماسال</option>
+                            <option value="">ماسوله</option>
+                            <option value="">ماکلوان</option>
+                            <option value="">مرجقل</option>
+                            <option value="">منجیل</option>
+                            <option value="">هشتپر</option>
+                            <option value="">واجارگاه</option>
+                        </select>
+                    </div>
+                </div>
+            </div>
+            <div>
+                <label style='display: block;' class="accountInfoTitle" for=""><i class='fas fa-graduation-cap iconMiddle' style='font-size:24px'></i> تحصیلات </label>
+                <div class="accountInfoContent educationContent">
+                    <div class="row sub_EducationContent">
+                        <div class="col-lg-3 col-md-4 col-sm-6">
+                            <label for=""> نام موسسه / دانشگاه </label>
+                            <input type="text">
+                        </div>
+                        <div class="col-lg-3 col-md-4 col-sm-6">
+                            <label for=""> رشته تحصیلی </label>
+                            <input type="text">
+                        </div>
+                        <div class="col-lg-3 col-md-4 col-sm-6">
+                            <label for=""> مقطع تحصیلی </label>
+                            <select selected="انتخاب مقطع" name="" id="">
+                                <option style="display: none;" value="">انتخاب مقطع</option>
+                                <option value="">دانش آموز ابتدایی</option>
+                                <option value="">دبیرستان دوره اول</option>
+                                <option value="">دبیرستان دوره دوم </option>
+                                <option value="">دیپلم</option>
+                                <option value="">دانشجوی کاردانی</option>
+                                <option value="">کاردانی</option>
+                                <option value="">دانشجوی کارشناسی</option>
+                                <option value="">کارشناسی</option>
+                                <option value="">دانشجوی کارشناسی ارشد</option>
+                                <option value="">کارشناس ارشد</option>
+                                <option value="">دانشجوی دکترای حرفه ای </option>
+                                <option value="">دکترای حرفه ای </option>
+                                <option value="">دانشجوی دکتری تخصصی</option>
+                                <option value="">دکتری تخصصی</option>
+                                <option value="">محقق پسادکتری</option>
+                                <option value="">پسادکتری</option>
+                            </select>
+                        </div>
+                        <div class="col-lg-3 col-md-4 col-sm-6">
+                            <label for="">تاریخ شروع</label>
+                            <input class="textAlign_ltr" type="date">
+                        </div>
+                        <div class="col-lg-3 col-md-4 col-sm-6">
+                            <label for="">تاریخ پایان</label>
+                            <input class="textAlign_ltr" type="date">
+                        </div>
+                        <div style="text-align: left;">
+                            <button onclick="removeEducation()" class="col-lg-6 col-md-12 col-sm-12 removeEducationButt"><i class='iconMiddle far fa-trash-alt' style="size: 24px;"></i></button>
+                        </div>
+                    </div>
+
+                </div>
+                <button onclick="addEducation()" class="addEducationButt"><i style='color:#30A2FF' class='iconMiddle fas fa-plus'></i>  افزودن تحصیلات</button>
+
+            </div>
+        </div>
+        <div id="accountEducation">
+            <div>
+                <label for="">آموزش های من</label>
+            </div>
+            <hr>
+            <div>
+                <div class="navSearched" style="width: 60%;">
+                    <i class='iconMiddle fas fa-search' style='font-size:24px; color:dimgrey'></i>
+                    <input onfocus="doSearch()" class="searchField navSearchedInput" type="search" placeholder="جستجو بین آموزش های من ...">
+                </div>
+                <div class="card-deck">
+                    <div class="card">
+                        <img src="body-img/popular/fvill0061-svg.svg" class="card-img-top" alt="...">
+                        <div class="card-body">
+                          <p class="card-text">آموزش رایگان ایلوستریتور Illustrator — سریع و آسان در ۲ ساعت</p>
+                        </div>
+                        <div class="card-footer">
+                            <div class="labelFooter">
+                                <label for="">۱۳۹,۰۰۰ تومان</label>
+                            </div>
+                            <div class="iconFooter">
+                                <a href=""><i class='iconMiddle far fa-heart' style='font-size:24px;color:#fff'></i></a>
+                            </div>
+                          </div>
+                    </div>
+
+                    <div class="card">
+                        <img src="body-img/popular/fvpht007-svg.svg" class="card-img-top" alt="...">
+                        <div class="card-body">
+                          <p class="card-text">آموزش رایگان پایتون — برنامه نویسی سریع و آسان در ۱۴۰ دقیقه</p>
+                        </div>
+                        <div class="card-footer">
+                            <div class="labelFooter">
+                                <label for="">۱۳۹,۰۰۰ تومان</label>
+                            </div>
+                            <div class="iconFooter">
+                                <a href=""><i class='iconMiddle far fa-heart' style='font-size:24px;color:#fff'></i></a>
+                            </div>
+                          </div>
+                    </div>
+
+                    <div class="card">
+                        <img src="body-img/popular/fvppt106-svg.svg" class="card-img-top" alt="...">
+                        <div class="card-body">
+                          <p class="card-text">آموزش رایگان پاورپوینت PowerPoint — سریع و آسان در ۱۵۰ دقیقه</p>
+                        </div>
+                        <div class="card-footer">
+                            <div class="labelFooter">
+                                <label for="">۱۳۹,۰۰۰ تومان</label>
+                            </div>
+                            <div class="iconFooter">
+                                <a href=""><i class='iconMiddle far fa-heart' style='font-size:24px;color:#fff'></i></a>
+                            </div>
+                          </div>
+                    </div>
+
+                    <div class="card">
+                        <img src="body-img/popular/fvps116-svg.svg" class="card-img-top" alt="...">
+                        <div class="card-body">
+                          <p class="card-text">آموزش رایگان فتوشاپ Photoshop — سریع و آسان در ۱۸۰ دقیقه</p>
+                        </div>
+                        <div class="card-footer">
+                            <div class="labelFooter">
+                                <label for="">۱۳۹,۰۰۰ تومان</label>
+                            </div>
+                            <div class="iconFooter">
+                                <a href=""><i class='iconMiddle far fa-heart' style='font-size:24px;color:#fff'></i></a>
+                            </div>
+                          </div>
+                    </div>
+
+                </div>
+            </div>
+            <div id="myLessons">
+
+            </div>
+        </div>
+        <div id="accountOpinion" >
+            <div class="opinionContainer">
+                <a name="opinion"></a>
+                <div class="sendOpinion">
+                    <div class="opinonLabel">
+                        <label for="">ارسال نظر</label>
+                        <input placeholder=" نام کاربری خود را وارد کنید ..." type="text">
+                    </div>
+                    <div class="opinionText">
+                        <div class="opinionTextDiv"><img src="images/unknownUser_318-644324.avif" alt=""></div>
+                        <input placeholder="نظر خود را بنویسید ..." type="text">
+                    </div>
+                    <div class="opinionButt">
+                        <button onclick="setOpinion()" class="blueButton">ارسال</button>
+                    </div>
+                </div>
+            </div>    
+        </div>
+    </section>
+    <!-- //////////////////////////////////////////////adver section////////////////////////////////////// -->
+<section class="adver">
+    <div class="row adver2">
+        <div class="col-md-6 adverText">
+            <h4>تدریس در فرادرس</h4>
+            <p>برای همکاری آموزشی، تدریس و ارایه آموزش در فرادرس و پیوستن به آن به عنوان عضو هیات علمی، به لینک زیر مراجعه کنید.</p>
+            <a href="teaching.html"><button class="blueButton"><i class='iconMiddle fas fa-chalkboard-teacher' style='font-size:20px; color: #fff;'></i> تدریس در فرادرس </button></a>
+        </div>
+        <div class="col-md-6">
+            <img src="body-img/teaching/tadris-dar-faradars-svg-01-(2)-1.webp" alt="">
+        </div>
+    </div>
+    <div class="row adver2">
+        <div class="col-md-6">
+            <img src="body-img/teaching/app(1).webp" alt="">
+        </div>
+        <div class="col-md-6 adverText">
+            <h4>اپلیکیشن فرادرس</h4>
+            <p> با دریافت و نصب اپلیکیشن فرادرس ، به راحتی در هر کجا و هر لحظه بر روی موبایل خود از تمامی امکانات فرادرس بهره‌مند شوید.
+                دانلود اپلیکیشن</p>
+            <a href="https://faradars.org/app"><button class="blueButton"><i class="fa fa-download" style="font-size:20px; color: #fff;"></i> دانلود اپلیکیشن </button></a>
+        </div>
+    </div>
+</section>
+
+<!-- ///////////////////////////////////////before footer///////////////////////////////////////////////// -->
+<section id="beforeFooter">
+
+    <div class="TemporaryAd">
+        <div>
+            <h5>به جامعه میلیونی دانشجویان فرادرس بپیوندید و به هزاران ساعت آموزش در حوزه‌های گوناگون دسترسی داشته باشید.</h5>
+        </div>
+        <a href="file:///D:/Atieh's%20Files/Final%20Project/form.html">
+            <button class="blueButton"> ورود و عضویت </button>
+        </a>
+    </div>
+        
+    <div class="PermanentAd ">
+        <div>
+            <img src="body-img/footer_advertising/صدها-هزار-دانشجو.webp" alt="">
+            <label for="">صدها هزار دانشجو</label>
+        </div>
+        <div>
+            <img src="body-img/footer_advertising/هزاران-ساعت-آموزش.webp" alt="">
+            <label for="">هزاران ساعت آموزش</label>
+        </div>
+        <div>
+            <img src="body-img/footer_advertising/دسترسی-همیشگی.webp" alt="">
+            <label for="">دسترسی همیشگی</label>
+        </div>
+        <div>
+            <img src="body-img/footer_advertising/دسترسی-آنی.webp" alt="">
+            <label for="">دسترسی آنی</label>
+        </div>
+        <div>
+            <img src="body-img/footer_advertising/تضمین-کیفیت.webp" alt="">
+            <label for="">تضمین کیفیت</label>
+        </div>
+    </div>
+</section>
+        <!-- //////////////////////////////////// footer section /////////////////////////////////////////// -->
+    <section id="footer">
+        <div  class="footerContainer">
+            <div class="footerSubContainer">
+                <div class="footerTag">
+                    <div class="footerLogo1">
+                        <img src="images/faradarslogo.svg" alt="">
+                    </div>
+                    <a href="aboutUs.html">
+                        <p><i class="iconMiddle fa fa-edit" style="font-size:24px;color:#000;"></i> درباره ی ما</p>
+                    </a>
+                    <a href="contactUs.html">
+                        <p><i class='iconMiddle fas fa-tty' style='font-size:24px; color:#000;'></i> تماس با ما</p>
+                    </a>
+                    <a href="aboutUs.html#opinion">
+                        <p><i class="iconMiddle fa fa-comments-o" style="font-size:24px;color:#000;"></i> ثبت نظرها</p>
+                    </a>
+                </div>
+                <div class="footerNews">
+                    <h5> <i class="iconMiddle fa fa-newspaper-o" style="font-size:24px; color:#000;"></i> عضویت در خبرنامه</h5>
+                    <input type="text" placeholder="آدرس پست الکترونیک">
+                    <button class="blueButton">ثبت نام</button>
+                </div>
+                <div class="footerLogos">
+                    <div class="footerLogo2">
+                        <img src="body-img/footer/5ff756287da19-nashr-min.webp" alt="">
+                        <img src="body-img/footer/logo.png" alt="">
+                    </div>
+                    <div class="footerLabel">
+                        <label for="">©فرادرس ۱۳۸۷-۱۴۰۲. تمامی حقوق محفوظ است.</label>
+                        <label for="">ساخته شده با <i style='font-size:16px;color:red' class='fas fa-heart'></i> در ایران</label>
+                    </div>
+                </div>
+            </div>
+
+ 
+        </div>
+
+    </section>
+
+    <script src="main.js" type="text/javascript"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>
+</body>

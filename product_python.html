@@ -1,0 +1,348 @@
+<!DOCTYPE html>
+<html lang="fa-IR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Faradars</title>
+
+    <!-- bootsrap link  -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+
+    <!-- css link  -->
+    <link rel="stylesheet" href="style.css">
+
+     <!-- font awesome script -->
+     <script src="https://kit.fontawesome.com/0229d508ab.js" crossorigin="anonymous"></script>
+
+
+</head>
+<body>
+    <a name="top"></a>
+    
+    <div class="error">
+        <p>عرض صفحه ی نمایشگر شما برای نمایش این سایت کوچکتر از اندازه ی مجاز است. لطفا صفحه ی نمایشگر را به حالت افقی تنطیم کنید.</p>
+        <img src="images/953661_2203.jpg" alt="">
+    </div>
+    <!-- //////////////////////////////////// navbar section /////////////////////////////////////////// -->
+    <section class="navBar">
+        <nav>
+            <button class="sidebarButton" onclick="activeSidebar()">
+                <i class='fas fa-bars' style='font-size:30px;color: rgb(86, 86, 86);'></i>
+            </button>
+            <a href="index.html" class="a_logo"> <img src="images/faradarslogo.svg" alt=""></a>
+
+            <a href="index.html#allEdu" type="submit" class="whiteButton" >همه آموزش ها</a>
+
+            <div class="navSearched">
+                <i class='iconMiddle fas fa-search' style='font-size:24px; color:dimgrey'></i>
+                <input onfocus="doSearch()" class="searchField navSearchedInput" type="search" placeholder="جستجوی آموزش ...">
+            </div>
+            <a href="teaching.html" class="a_teaching"><i class='iconMiddle fas fa-chalkboard-teacher' style='font-size:22px;'></i>  تدریس در فرادرس </a>
+
+            <!-- <button id="beforeLoginBut" onclick="signIn()" type="submit" class="blueButton" style="flex-grow: 2; display: none;">ورود / ثبت نام</button> -->
+
+            <a class="navAccount" href="personalAccount.html">
+                <i class='iconMiddle far fa-user-circle' style='font-size:24px'></i>
+                <label for="">حساب کاربری</label>
+            </a>
+        </nav>
+    </section>
+    <div class="sidebarContainer">
+    
+        <div class="sidebar"> 
+            <button onclick="deActiveSidebar()">
+                <i class="fa fa-close" style="font-size:24px;color:gray"></i>
+            </button>
+            <div >
+                <a href="personalAccount.html"><i class='far fa-user-circle iconMiddle' style='font-size:24px'></i> حساب کاربری </a>
+            </div>
+            <div>
+                <a href="index.html#allEdu"> <i class='far fa-folder-open iconMiddle' style='font-size:24px'></i>  همه آموزش ها </a>
+            </div>
+            <div>
+                <a href="teaching.html"><i class='iconMiddle fas fa-chalkboard-teacher' style='font-size:22px;'></i>   تدریس در فرادرس</a>
+            </div>
+            <div id="logOut">
+                <a href="form.html"><i class='fas fa-sign-out-alt iconMiddle' style='font-size:22px'></i> خروج از حساب کاربری </a>
+            </div>
+        </div>
+    
+    </div>
+  
+    <section class="productTitle">
+        <div class="productTitleDiv">
+            <a href="index.html">خانه</a>
+            <label for="">/</label>
+            <a href="index.html#allEdu">آموزش ها</a>
+            <label for="">/</label>
+            <label for="">آموزش برنامه نویسی پایتون Python – مقدماتی</label>
+        </div>
+        <div class="productTitleDiv2">
+            <div>
+                <a href="#explain">مشخصات آموزش</a>
+            </div>
+            <div>
+                <a href="#preview">پیش‌نمایش</a>
+            </div>
+        </div>
+    </section>
+    <section class="productContent">
+        <div class="productVideo">
+            <video width="95%" height="" controls>
+                <source src="https://vid.faradars.org/dl/fvpht007/720/fvpht007_00_ro96c8wd.mp4" type="video/mp4">
+            </video>
+            <p style="visibility: hidden; padding-bottom: 7vh;"><a name="explain"></a></p>
+            <div class="productText">
+                <h4>توضیحات</h4>
+                <h6>پایتون (Python) چیست؟ </h6>
+                <p>پایتون یک زبان برنامه‌نویسی شی‌گرا و سطح بالا با دستورات قابل فهم برای انسان‌ است.
+                     یادگیری این زبان برنامه‌نویسی با توجه به نزدیکی زبان آن به زبان انسان، ساده و سریع است.
+                      همچنین پایتون یک زبان چندمنظوره است و برای بسیاری از کاربردهای برنامه‌نویسی مانند توسعه وب، علوم داده، هوش مصنوعی و… مناسب است. </p>
+                <h6>اهمیت یادگیری برنامه‌نویسی پایتون (Python) چیست؟ </h6>
+                <p>دلایل زیادی برای یادگیری پایتون وجود دارد که در ادامه به چند مورد از آن‌ها اشاره می‌کنیم:</p>
+                <ul>
+                    <li>پایتون زبانی ساده و قابل درک و در عین حال به اندازه سایر زبان‌های برنامه‌نویسی قدرتمند است.</li>
+                    <li>پایتون زبانی متن‌باز است و همه علاقه‌مندان می‌توانند در توسعه آن مشارکت داشته باشند.</li>
+                    <li>کدهای زبان پایتون به اندازه متن انگلیسی قابل درک و خوانا است.</li>
+                    <li>یادگیری این زبان برای مبتدیان مناسب است.</li>
+                    <li>کاربرد وسیعی از علم داده و مهندسی نرم‌افزار تا توسعه اپلیکیشن، هوش مصنوعی و یادگیری ماشین دارد.</li>
+                    <li>سریع‌ترین زبان برنامه‌نویسی در حال رشد است.</li>
+                    <li>تقاضا برای استخدام توسعه‌دهنده پایتون بسیار بالا است.</li>
+                    <li>جامعه برنامه‌نویسان پایتون روز‌به‌روز بزرگتر می‌شود و برای خیلی از مسائلی که با آن رو‌به‌‌رو می‌شوید، می‌توانید از راه‌حل‌های دیگران کمک بگیرید. </li>
+                </ul>
+                
+                <h6>در این فرادرس چه چیزی و چگونه یاد می‌گیریم؟ </h6>
+                <p>در این فرادرس زبان برنامه‌نویسی پایتون را از صفر آموزش می‌دهیم و برای استفاده از این آموزش، نیاز به هیچ دانشی در زمینه برنامه‌نویسی ندارید. تمام مطالب به ساده‌ترین شکل ممکن مطرح می‌شود و با
+                     حل مثال‌های مختلف، جزئیات مطالب را می‌آموزید و می‌توانید آن را به کار ببرید.</p>
+                     <a name="preview"></a>
+                <p>برای عمیق‌تر کردن یادگیری، تمرین‌ها و پروژه‌های مختلفی طراحی شده است که ابتدا شما آن‌ها را حل کرده و جواب‌های خود را با راه‌حل‌ها مقایسه می‌کنید. در پایان آموزش، یک مهارت بسیار مهم دنیای امروز را یاد گرفته‌ و می‌توانید با پایتون
+                     کارهای معمول و کسل‌کننده را به سریع‌ترین شکل ممکن انجام دهید و از کار و زندگی، بیشتر لذت ببرید.</p>
+              </div>
+              <div class="productPreview">
+                <h4>پیش نمایش‌ها</h4>
+                <div id="v1" onclick="videoToggle(this)">
+                    <i style="font-size: 26px;" class='iconMiddle fas fa-film'></i>
+                    <label for=""> ۱.مفهوم Assignment و تغییر متغیر </label>
+                    <i id="iDown1" style="font-size: 26px;" class='iconMiddle fas fa-angle-down'></i>
+                    <i id="iUp1" style="display: none; font-size: 26px;" class='iconMiddle fas fa-angle-up'></i>
+                </div>
+                <div id="videoDiv1" class="videoDiv changeVideoDisplay">
+                    <video controls>
+                        <source src="https://freebies.faradars.org/video/fvpht0064/720/fvpht0064_000_intro.mp4" type="video/mp4">
+                        Your browser does not support the video tag.
+                    </video>
+                </div>
+              <div id="v2" onclick="videoToggle(this)">
+                    <i style="font-size: 26px;" class='iconMiddle fas fa-film'></i>
+                    <label for="">۲.ساختار if</label>
+                    <i id="iDown2" style="font-size: 26px;" class='iconMiddle fas fa-angle-down'></i>
+                    <i id="iUp2" style="display: none; font-size: 26px;" class='iconMiddle fas fa-angle-up'></i>
+               </div> 
+                 <div id="videoDiv2" class="videoDiv">
+                    <video controls>
+                        <source src="https://freebies.faradars.org/video/fvpht0064/720/fvpht0064_000_intro.mp4" type="video/mp4">
+                        Your browser does not support the video tag.
+                    </video>
+                </div>
+                <div  id="v3" onclick="videoToggle(this)">
+                    <i style="font-size: 26px;" class='iconMiddle fas fa-film'></i>
+                    <label for="">۳.while</label>
+                    <i id="iDown3" style="font-size: 26px;" class='iconMiddle fas fa-angle-down'></i>
+                    <i id="iUp3" style="display: none; font-size: 26px;" class='iconMiddle fas fa-angle-up'></i>
+                </div>
+                <div id="videoDiv3" class="videoDiv">
+                    <video controls>
+                        <source src="https://freebies.faradars.org/video/fvpht0064/720/fvpht0064_000_intro.mp4" type="video/mp4">
+                        Your browser does not support the video tag.
+                    </video>
+                </div>
+                <div  id="v4" onclick="videoToggle(this)">
+                    <i style="font-size: 26px;" class='iconMiddle fas fa-film'></i>
+                    <label for="">۴.مرور امکانات کتابخانه پایتون</label>
+                    <i id="iDown4" style="font-size: 26px;" class='iconMiddle fas fa-angle-down'></i>
+                    <i id="iUp4" style="display: none; font-size: 26px;" class='iconMiddle fas fa-angle-up'></i>
+                </div>
+                <div id="videoDiv4" class="videoDiv">
+                    <video controls>
+                        <source src="https://freebies.faradars.org/video/fvpht0064/720/fvpht0064_000_intro.mp4" type="video/mp4">
+                        Your browser does not support the video tag.
+                    </video>
+                </div>
+                <div id="v5" onclick="videoToggle(this)">
+                    <i style="font-size: 26px;" class='iconMiddle fas fa-film'>
+                    </i><label for="">۵.مثال با Generator</label>
+                    <i id="iDown5" style="font-size: 26px;" class='iconMiddle fas fa-angle-down'></i>
+                    <i id="iUp5" style="display: none; font-size: 26px;" class='iconMiddle fas fa-angle-up'></i>
+                </div>
+                <div id="videoDiv5" class="videoDiv">
+                    <video controls>
+                        <source src="https://freebies.faradars.org/video/fvpht0064/720/fvpht0064_000_intro.mp4" type="video/mp4">
+                        Your browser does not support the video tag.
+                    </video>
+                </div>
+                <div  id="v6" onclick="videoToggle(this)">
+                    <i style="font-size: 26px;" class='iconMiddle fas fa-film'>
+                    </i><label for="">۶.مفهوم کلاس</label>
+                    <i id="iDown6" style="font-size: 26px;" class='iconMiddle fas fa-angle-down'></i>
+                    <i id="iUp6" style="display: none; font-size: 26px;" class='iconMiddle fas fa-angle-up'></i>
+                </div>
+                <div id="videoDiv6" class="videoDiv">
+                    <video controls>
+                        <source src="https://freebies.faradars.org/video/fvpht0064/720/fvpht0064_000_intro.mp4" type="video/mp4">
+                        Your browser does not support the video tag.
+                    </video>
+                </div>
+                <div id="v7" onclick="videoToggle(this)">
+                    <i style="font-size: 26px;" class='iconMiddle fas fa-film'></i>
+                    <label for="">۷.فراخوانی تابع بیرون کلاس در کلاس</label>
+                    <i id="iDown7" style="font-size: 26px;" class='iconMiddle fas fa-angle-down'></i>
+                    <i id="iUp7" style="display: none; font-size: 26px;" class='iconMiddle fas fa-angle-up'></i>
+                </div>
+                <div id="videoDiv7" class="videoDiv">
+                    <video controls>
+                        <source src="https://freebies.faradars.org/video/fvpht0064/720/fvpht0064_000_intro.mp4" type="video/mp4">
+                        Your browser does not support the video tag.
+                    </video>
+                </div>
+              </div> 
+              
+        </div>
+        <a class="bookmark" href="#top">
+            <i class='iconMiddle fas fa-chevron-circle-up' style='font-size:36px '></i>
+        </a>
+        <div class="productCost">
+            <div>
+                <h5>آموزش برنامه نویسی پایتون Python – مقدماتی</h5>
+            </div>
+            <div class="costLabels">
+                <div>
+                    <label class="costLabels_r" for="">هزینه آموزش</label>
+                    <label class="costLabels_l" for=""><del>۳۱۹,۰۰۰ تومان</del></label>
+                </div>
+                <div>
+                    <label class="costLabels_r" for="">تخفیف<span style="color: red;"> ۵۰ درصدی </span> </label>
+                    <label class="costLabels_l" for="" style="color: red;">۱۵۹,۵۰۰ تومان</label>
+                </div>
+            </div>
+            <div>
+                
+                <button class="blueButton"><i class='fas fa-cart-plus'></i> افزودن به سبد خرید </button>
+                <div class="costLabels">
+                    <div>
+                        <label class="costLabels_r" for="">تعداد دانشجو</label>
+                        <label class="costLabels_l" for="">۶,۸۷۲ نفر</label>
+                    </div>
+                    <div>
+                        <label class="costLabels_r" for="">مدت زمان</label>
+                        <label class="costLabels_l" for="" >۲۱ ساعت و ۲۲ دقیقه</label>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </section>
+    <!-- //////////////////////////////////////////////adver section////////////////////////////////////// -->
+<section class="adver">
+    <div class="row adver2">
+        <div class="col-md-6 adverText">
+            <h4>تدریس در فرادرس</h4>
+            <p>برای همکاری آموزشی، تدریس و ارایه آموزش در فرادرس و پیوستن به آن به عنوان عضو هیات علمی، به لینک زیر مراجعه کنید.</p>
+            <a href="teaching.html"><button class="blueButton"><i class='iconMiddle fas fa-chalkboard-teacher' style='font-size:20px; color: #fff;'></i> تدریس در فرادرس </button></a>
+        </div>
+        <div class="col-md-6">
+            <img src="body-img/teaching/tadris-dar-faradars-svg-01-(2)-1.webp" alt="">
+        </div>
+    </div>
+    <div class="row adver2">
+        <div class="col-md-6">
+            <img src="body-img/teaching/app(1).webp" alt="">
+        </div>
+        <div class="col-md-6 adverText">
+            <h4>اپلیکیشن فرادرس</h4>
+            <p> با دریافت و نصب اپلیکیشن فرادرس ، به راحتی در هر کجا و هر لحظه بر روی موبایل خود از تمامی امکانات فرادرس بهره‌مند شوید.
+                دانلود اپلیکیشن</p>
+            <a href="https://faradars.org/app"><button class="blueButton"><i class="fa fa-download" style="font-size:20px; color: #fff;"></i> دانلود اپلیکیشن </button></a>
+        </div>
+    </div>
+</section>
+
+<!-- ///////////////////////////////////////before footer///////////////////////////////////////////////// -->
+<section id="beforeFooter">
+
+    <div class="TemporaryAd">
+        <div>
+            <h5>به جامعه میلیونی دانشجویان فرادرس بپیوندید و به هزاران ساعت آموزش در حوزه‌های گوناگون دسترسی داشته باشید.</h5>
+        </div>
+        <a href="file:///D:/Atieh's%20Files/Final%20Project/form.html">
+            <button class="blueButton"> ورود و عضویت </button>
+        </a>
+    </div>
+        
+    <div class="PermanentAd ">
+        <div>
+            <img src="body-img/footer_advertising/صدها-هزار-دانشجو.webp" alt="">
+            <label for="">صدها هزار دانشجو</label>
+        </div>
+        <div>
+            <img src="body-img/footer_advertising/هزاران-ساعت-آموزش.webp" alt="">
+            <label for="">هزاران ساعت آموزش</label>
+        </div>
+        <div>
+            <img src="body-img/footer_advertising/دسترسی-همیشگی.webp" alt="">
+            <label for="">دسترسی همیشگی</label>
+        </div>
+        <div>
+            <img src="body-img/footer_advertising/دسترسی-آنی.webp" alt="">
+            <label for="">دسترسی آنی</label>
+        </div>
+        <div>
+            <img src="body-img/footer_advertising/تضمین-کیفیت.webp" alt="">
+            <label for="">تضمین کیفیت</label>
+        </div>
+    </div>
+</section>
+        <!-- //////////////////////////////////// footer section /////////////////////////////////////////// -->
+    <section id="footer">
+        <div  class="footerContainer">
+            <div class="footerSubContainer">
+                <div class="footerTag">
+                    <div class="footerLogo1">
+                        <img src="images/faradarslogo.svg" alt="">
+                    </div>
+                    <a href="aboutUs.html">
+                        <p><i class="iconMiddle fa fa-edit" style="font-size:24px;color:#000;"></i> درباره ی ما</p>
+                    </a>
+                    <a href="contactUs.html">
+                        <p><i class='iconMiddle fas fa-tty' style='font-size:24px; color:#000;'></i> تماس با ما</p>
+                    </a>
+                    <a href="aboutUs.html#opinion">
+                        <p><i class="iconMiddle fa fa-comments-o" style="font-size:24px;color:#000;"></i> ثبت نظرها</p>
+                    </a>
+                </div>
+                <div class="footerNews">
+                    <h5> <i class="iconMiddle fa fa-newspaper-o" style="font-size:24px; color:#000;"></i> عضویت در خبرنامه</h5>
+                    <input type="text" placeholder="آدرس پست الکترونیک">
+                    <button class="blueButton">ثبت نام</button>
+                </div>
+                <div class="footerLogos">
+                    <div class="footerLogo2">
+                        <img src="body-img/footer/5ff756287da19-nashr-min.webp" alt="">
+                        <img src="body-img/footer/logo.png" alt="">
+                    </div>
+                    <div class="footerLabel">
+                        <label for="">©فرادرس ۱۳۸۷-۱۴۰۲. تمامی حقوق محفوظ است.</label>
+                        <label for="">ساخته شده با <i style='font-size:16px;color:red' class='fas fa-heart'></i> در ایران</label>
+                    </div>
+                </div>
+            </div>
+
+ 
+        </div>
+
+    </section>
+    <script src="main.js"></script>
+    <script controls="controls" type="video/mp4" src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>
+</body>
+</html>

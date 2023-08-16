@@ -1,0 +1,316 @@
+<!DOCTYPE html>
+<html lang="fa-IR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Faradars</title>
+
+    <!-- bootsrap link  -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+
+    <!-- css link  -->
+    <link rel="stylesheet" href="style.css">
+
+     <!-- font awesome script -->
+     <script src="https://kit.fontawesome.com/0229d508ab.js" crossorigin="anonymous"></script>
+
+
+</head>
+<body>
+    <a name="top"></a>
+    
+    <div class="error">
+        <p>عرض صفحه ی نمایشگر شما برای نمایش این سایت کوچکتر از اندازه ی مجاز است. لطفا صفحه ی نمایشگر را به حالت افقی تنطیم کنید.</p>
+        <img src="images/953661_2203.jpg" alt="">
+    </div>
+    <!-- //////////////////////////////////// navbar section /////////////////////////////////////////// -->
+    <section class="navBar">
+        <nav>
+            <button class="sidebarButton" onclick="activeSidebar()">
+                <i class='fas fa-bars' style='font-size:30px;color: rgb(86, 86, 86);'></i>
+            </button>
+            <a href="index.html" class="a_logo"> <img src="images/faradarslogo.svg" alt=""></a>
+
+            <a href="index.html#allEdu" type="submit" class="whiteButton" >همه آموزش ها</a>
+
+            <div class="navSearched">
+                <i class='iconMiddle fas fa-search' style='font-size:24px; color:dimgrey'></i>
+                <input onfocus="doSearch()" class="searchField navSearchedInput" type="search" placeholder="جستجوی آموزش ...">
+            </div>
+
+            <a href="teaching.html" class="a_teaching"><i class='iconMiddle fas fa-chalkboard-teacher' style='font-size:22px;'></i>  تدریس در فرادرس </a>
+
+            <!-- <button id="beforeLoginBut" onclick="signIn()" type="submit" class="blueButton" style="flex-grow: 2; display: none;">ورود / ثبت نام</button> -->
+
+            <a class="navAccount" href="personalAccount.html">
+                <i class='iconMiddle far fa-user-circle' style='font-size:24px'></i>
+                <label for="">حساب کاربری</label>
+            </a>
+        </nav>
+    </section>
+    <div class="sidebarContainer">
+    
+        <div class="sidebar"> 
+            <button onclick="deActiveSidebar()">
+                i class="fa fa-close" style="font-size:24px;color:gray"></i>
+            </button>
+            <div >
+                <a href="personalAccount.html"><i class='far fa-user-circle iconMiddle' style='font-size:24px'></i> حساب کاربری </a>
+            </div>
+            <div>
+                <a href="index.html#allEdu"> <i class='far fa-folder-open iconMiddle' style='font-size:24px'></i>  همه آموزش ها </a>
+            </div>
+            <div>
+                <a href="teaching.html"><i class='iconMiddle fas fa-chalkboard-teacher' style='font-size:22px;'></i>   تدریس در فرادرس</a>
+            </div>
+            <div id="logOut">
+                <a href="form.html"><i class='fas fa-sign-out-alt iconMiddle' style='font-size:22px'></i> خروج از حساب کاربری </a>
+            </div>
+        </div>
+    
+    </div>
+
+    <section class="productTitle">
+        <div class="productTitleDiv">
+            <a href="index.html">خانه</a>
+            <label for="">/</label>
+            <a href="index.html#allEdu">آموزش ها</a>
+            <label for="">/</label>
+            <label for="">آموزش اکسل Excel — سریع و آسان در ۱۸۰ دقیقه</label>
+        </div>
+        <div class="productTitleDiv2">
+            <div>
+                <a href="#explain">مشخصات آموزش</a>
+            </div>
+            <div>
+                <a href="#preview">پیش‌نمایش</a>
+            </div>
+        </div>
+    </section>
+    
+    <section class="productContent">
+        <div class="productVideo">
+            <video width="95%" height="" controls>
+                <source src="https://vid.faradars.org/dl/fvxl01015/720/fvxl01015_00_cdqsirl5.mp4" type="video/mp4">
+            </video>           
+            <p style="visibility: hidden; padding-bottom: 7vh;"><a name="explain"></a></p>
+            <div class="productText">
+                <h4>توضیحات</h4>
+                <h6>نرم‌افزار اکسل چیست؟</h6>
+                <p>اکسل (Excel) یکی از نرم‌افزارهای آفیس شرکت مایکروسافت است که برای ایجاد و ویرایش جداول محاسباتی و
+                     انجام محاسبات ریاضی و آماری به کار می‌رود. اکسل با داشتن ویژگی‌های گوناگون از جمله فرمول‌نویسی، گرافیکی
+                     ، تصویری، صوتی و حتی تدوین و چاپ گزارشات، در بسیاری از حوزه‌های کاری به‌عنوان یکی از ابزارهای اساسی استفاده می‌شود.</p>
+                <h6>اهمیت یادگیری نرم‌افزار اکسل چیست؟</h6>
+                <p>به جرات می‌توان گفت که اکسل (Microsoft Excel)، یکی از بهترین، محبوب‌ترین و قدرتمندترین نرم‌افزارها در حوزه سازماندهی، تحلیل و نظارت بر داده‌ها
+                     به شمار می‌آید. با اکسل شما به راحتی امکان مدیریت، کنترل و حتی مصورسازی داده‌ها و اطلاعات مورد نظر خود را دارید. کار کردن در یک فضای شبکه‌بندی شده، دقیق و با وسعت زیاد، به صورت صفحه‌گسترده و با امکانات بسیار زیادی از جمله نمودارها، فرمول‌ها، توابع، فضای برنامه‌نویسی و ده‌ها قابلیت دیگر، امکان نظارت و کنترل بر روی داده‌ها را به آسانی فراهم می‌کند. زمینه‌های استفاده زیادی را برای اکسل می‌توانیم نام ببریم. از استفاده در منزل یا مغازه، به عنوان یک برنامه حسابداری ساده یا دفتر
+                      تلفن گرفته تا استفاده در شرکت‌ها و سازمان‌های بزرگ، برای سازمان‌دهی و تحلیل اطلاعات، همگی با اکسل، امکان‌پذیر است.</p>
+                <p>با توجه به اهمیت استفاده از داده‌ها و اطلاعات در تمامی زمینه‌های شغلی و شخصی، یادگیری اکسل، به عنوان یک ابزار ساده، قدرتمند، ارزان و همیشه در دسترس، اولویت بسیار بالایی دارد. با یادگیری اکسل و البته سایر نرم‌افزارهای آفیس (Microsoft Office)، علاوه بر اینکه می‌توانیم کارهای روزمره خود را در زمینه کنترل و تحلیل داده‌ها
+                     انجام دهیم، امکان ورود به بازار کار و استفاده از فرصت‌های شغلی فراوان در موسسات، شرکت‌ها و سازمان‌های دولتی و خصوصی وجود دارد.</p>
+                <h6>در این فرادرس چه چیزی و چگونه یاد می‌گیریم؟ </h6>
+                <a name="preview"></a>
+                <p>در این آموزش، با نرم‌افزار اکسل، کاربردها، قابلیت‌ها و امکانات آن آشنا می‌شوید.
+                     روند آموزش، به شکلی است که موارد کاربردی و اصلی را مورد بررسی قرار می‌دهیم که در گام‌های بعدی، با مطالعه، تمرین و صرف زمان، بتوانید تسلط بسیار مناسبی را بر اکسل، کسب نمایید. موضوعاتی مانند قالب‌بندی سلول‌ها، مدیریت اطلاعات، فرمول‌نویسی، ترسیم انواع نمودار، صفحه‌بندی اطلاعات، فیلتر داده‌ها، استفاده از شرط‌ها، ایجاد انواع جدول، ابزارهای توسعه و برخی امکانات دیگر از جمله محورهای این آموزش هستند.</p>
+              </div>
+              <div class="productPreview">
+                <h4>پیش نمایش‌ها</h4>
+                <div id="v1" onclick="videoToggle(this)">
+                    <i style="font-size: 26px;" class='iconMiddle fas fa-film'></i>
+                    <label for=""> ۱.مروری بر رابط کاربری اکسل و معرفی بخش های مختلف</label>
+                    <i id="iDown1" style="font-size: 26px;" class='iconMiddle fas fa-angle-down'></i>
+                    <i id="iUp1" style="display: none; font-size: 26px;" class='iconMiddle fas fa-angle-up'></i>
+                </div>
+                <div id="videoDiv1" class="videoDiv changeVideoDisplay">
+                    <video controls>
+                        <source src="https://vid.faradars.org/dl/fvxl01015/720/fvxl01015_02_95d10rjx.mp4" type="video/mp4">
+                        Your browser does not support the video tag.
+                    </video>
+                </div>
+                <div id="v2" onclick="videoToggle(this)">
+                      <i style="font-size: 26px;" class='iconMiddle fas fa-film'></i>
+                      <label for="">۲.بررسی مبحث قالب بندی سلول ها</label>
+                      <i id="iDown2" style="font-size: 26px;" class='iconMiddle fas fa-angle-down'></i>
+                      <i id="iUp2" style="display: none; font-size: 26px;" class='iconMiddle fas fa-angle-up'></i>
+                 </div> 
+                   <div id="videoDiv2" class="videoDiv">
+                      <video controls>
+                          <source src="https://vid.faradars.org/dl/fvxl01015/720/fvxl01015_03_hi9fxzw5.mp4" type="video/mp4">
+                          Your browser does not support the video tag.
+                      </video>
+                  </div>
+                  <div  id="v3" onclick="videoToggle(this)">
+                      <i style="font-size: 26px;" class='iconMiddle fas fa-film'></i>
+                      <label for="">۳.حاشیه بندی و پر کردن خودکار سلول ها</label>
+                      <i id="iDown3" style="font-size: 26px;" class='iconMiddle fas fa-angle-down'></i>
+                      <i id="iUp3" style="display: none; font-size: 26px;" class='iconMiddle fas fa-angle-up'></i>
+                  </div>
+                  <div id="videoDiv3" class="videoDiv">
+                      <video controls>
+                          <source src="https://vid.faradars.org/dl/fvxl01015/720/fvxl01015_04_rs96wylm.mp4" type="video/mp4">
+                          Your browser does not support the video tag.
+                      </video>
+                  </div>
+                  <div  id="v4" onclick="videoToggle(this)">
+                      <i style="font-size: 26px;" class='iconMiddle fas fa-film'></i>
+                      <label for="">۴.استفاده از شرط ها برای تغییر رنگ سلول ها</label>
+                      <i id="iDown4" style="font-size: 26px;" class='iconMiddle fas fa-angle-down'></i>
+                      <i id="iUp4" style="display: none; font-size: 26px;" class='iconMiddle fas fa-angle-up'></i>
+                  </div>
+                  <div id="videoDiv4" class="videoDiv">
+                      <video controls>
+                          <source src="https://vid.faradars.org/dl/fvxl01015/720/fvxl01015_05_pthael35.mp4" type="video/mp4">
+                          Your browser does not support the video tag.
+                      </video>
+                  </div>
+                  <div id="v5" onclick="videoToggle(this)">
+                      <i style="font-size: 26px;" class='iconMiddle fas fa-film'>
+                      </i><label for="">۵.نحوه ی درج تصویر‌ و لوگو در اسناد اکسل</label>
+                      <i id="iDown5" style="font-size: 26px;" class='iconMiddle fas fa-angle-down'></i>
+                      <i id="iUp5" style="display: none; font-size: 26px;" class='iconMiddle fas fa-angle-up'></i>
+                  </div>
+                  <div id="videoDiv5" class="videoDiv">
+                      <video controls>
+                          <source src="https://vid.faradars.org/dl/fvxl01015/720/fvxl01015_06_2uofi8tb.mp4">
+                          Your browser does not support the video tag.
+                      </video>
+                  </div>
+              </div> 
+        </div>
+        <a class="bookmark" href="#top">
+            <i class='iconMiddle fas fa-chevron-circle-up' style='font-size:36px '></i>
+        </a>
+        <div class="productCost">
+            <div>
+                <h5> آموزش رایگان اکسل Excel — سریع و آسان در ۱۸۰ دقیقه</h5>
+            </div>
+            <div class="costLabels">
+                <div>
+                    <label class="costLabels_r" for="">هزینه آموزش</label>
+                    <label class="costLabels_l" for=""><del>۴۰۰,۰۰۰ تومان</del></label>
+                </div>
+                <div>
+                    <label class="costLabels_r" for="">تخفیف<span style="color: red;"> ۵۰ درصدی </span> </label>
+                    <label class="costLabels_l" for="" style="color: red;">۲۰۰,۰۰۰ تومان</label>
+                </div>
+            </div>
+            <div>
+                <button class="blueButton"><i class='fas fa-cart-plus'></i> افزودن به سبد خرید </button>
+                <div class="costLabels">
+                    <div>
+                        <label class="costLabels_r" for="">تعداد دانشجو</label>
+                        <label class="costLabels_l" for="">۶,۸۷۲ نفر</label>
+                    </div>
+                    <div>
+                        <label class="costLabels_r" for="">مدت زمان</label>
+                        <label class="costLabels_l" for="" >۲۱ ساعت و ۲۲ دقیقه</label>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </section>
+    <!-- //////////////////////////////////////////////adver section////////////////////////////////////// -->
+<section class="adver">
+    <div class="row adver2">
+        <div class="col-md-6 adverText">
+            <h4>تدریس در فرادرس</h4>
+            <p>برای همکاری آموزشی، تدریس و ارایه آموزش در فرادرس و پیوستن به آن به عنوان عضو هیات علمی، به لینک زیر مراجعه کنید.</p>
+            <a href="teaching.html"><button class="blueButton"><i class='iconMiddle fas fa-chalkboard-teacher' style='font-size:20px; color: #fff;'></i> تدریس در فرادرس </button></a>
+        </div>
+        <div class="col-md-6">
+            <img src="body-img/teaching/tadris-dar-faradars-svg-01-(2)-1.webp" alt="">
+        </div>
+    </div>
+    <div class="row adver2">
+        <div class="col-md-6">
+            <img src="body-img/teaching/app(1).webp" alt="">
+        </div>
+        <div class="col-md-6 adverText">
+            <h4>اپلیکیشن فرادرس</h4>
+            <p> با دریافت و نصب اپلیکیشن فرادرس ، به راحتی در هر کجا و هر لحظه بر روی موبایل خود از تمامی امکانات فرادرس بهره‌مند شوید.
+                دانلود اپلیکیشن</p>
+            <a href="https://faradars.org/app"><button class="blueButton"><i class="fa fa-download" style="font-size:20px; color: #fff;"></i> دانلود اپلیکیشن </button></a>
+        </div>
+    </div>
+</section>
+
+<!-- ///////////////////////////////////////before footer///////////////////////////////////////////////// -->
+<section id="beforeFooter">
+
+    <div class="TemporaryAd">
+        <div>
+            <h5>به جامعه میلیونی دانشجویان فرادرس بپیوندید و به هزاران ساعت آموزش در حوزه‌های گوناگون دسترسی داشته باشید.</h5>
+        </div>
+        <a href="file:///D:/Atieh's%20Files/Final%20Project/form.html">
+            <button class="blueButton"> ورود و عضویت </button>
+        </a>
+    </div>
+        
+    <div class="PermanentAd ">
+        <div>
+            <img src="body-img/footer_advertising/صدها-هزار-دانشجو.webp" alt="">
+            <label for="">صدها هزار دانشجو</label>
+        </div>
+        <div>
+            <img src="body-img/footer_advertising/هزاران-ساعت-آموزش.webp" alt="">
+            <label for="">هزاران ساعت آموزش</label>
+        </div>
+        <div>
+            <img src="body-img/footer_advertising/دسترسی-همیشگی.webp" alt="">
+            <label for="">دسترسی همیشگی</label>
+        </div>
+        <div>
+            <img src="body-img/footer_advertising/دسترسی-آنی.webp" alt="">
+            <label for="">دسترسی آنی</label>
+        </div>
+        <div>
+            <img src="body-img/footer_advertising/تضمین-کیفیت.webp" alt="">
+            <label for="">تضمین کیفیت</label>
+        </div>
+    </div>
+</section>
+        <!-- //////////////////////////////////// footer section /////////////////////////////////////////// -->
+    <section id="footer">
+        <div  class="footerContainer">
+            <div class="footerSubContainer">
+                <div class="footerTag">
+                    <div class="footerLogo1">
+                        <img src="images/faradarslogo.svg" alt="">
+                    </div>
+                    <a href="aboutUs.html">
+                        <p><i class="iconMiddle fa fa-edit" style="font-size:24px;color:#000;"></i> درباره ی ما</p>
+                    </a>
+                    <a href="contactUs.html">
+                        <p><i class='iconMiddle fas fa-tty' style='font-size:24px; color:#000;'></i> تماس با ما</p>
+                    </a>
+                    <a href="aboutUs.html#opinion">
+                        <p><i class="iconMiddle fa fa-comments-o" style="font-size:24px;color:#000;"></i> ثبت نظرها</p>
+                    </a>
+                </div>
+                <div class="footerNews">
+                    <h5> <i class="iconMiddle fa fa-newspaper-o" style="font-size:24px; color:#000;"></i> عضویت در خبرنامه</h5>
+                    <input type="text" placeholder="آدرس پست الکترونیک">
+                    <button class="blueButton">ثبت نام</button>
+                </div>
+                <div class="footerLogos">
+                    <div class="footerLogo2">
+                        <img src="body-img/footer/5ff756287da19-nashr-min.webp" alt="">
+                        <img src="body-img/footer/logo.png" alt="">
+                    </div>
+                    <div class="footerLabel">
+                        <label for="">©فرادرس ۱۳۸۷-۱۴۰۲. تمامی حقوق محفوظ است.</label>
+                        <label for="">ساخته شده با <i style='font-size:16px;color:red' class='fas fa-heart'></i> در ایران</label>
+                    </div>
+                </div>
+            </div>
+
+ 
+        </div>
+
+    </section>
+
+    <script src="main.js"></script>
+    <script controls="controls" type="video/mp4" src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>
+</body>
+</html>

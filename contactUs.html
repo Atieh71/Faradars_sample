@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="fa-IR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Faradars</title>
+
+    <!-- bootsrap link  -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+
+    <!-- css link  -->
+    <link rel="stylesheet" href="style.css">
+
+    <!-- font awesome script -->
+    <script src="https://kit.fontawesome.com/0229d508ab.js" crossorigin="anonymous"></script>
+
+</head>
+<body>
+    
+    <div class="error">
+        <p>عرض صفحه ی نمایشگر شما برای نمایش این سایت کوچکتر از اندازه ی مجاز است. لطفا صفحه ی نمایشگر را به حالت افقی تنطیم کنید.</p>
+        <img src="images/953661_2203.jpg" alt="">
+    </div>
+    <!-- //////////////////////////////////// navbar section /////////////////////////////////////////// -->
+    <section class="navBar">
+        <nav>
+            <button class="sidebarButton" onclick="activeSidebar()">
+                <i class='fas fa-bars' style='font-size:30px;color: rgb(86, 86, 86);'></i>
+            </button>
+            <a href="index.html" class="a_logo"> <img src="images/faradarslogo.svg" alt=""></a>
+
+            <a href="index.html#allEdu" type="submit" class="whiteButton" >همه آموزش ها</a>
+
+            <div class="navSearched">
+                <i class='iconMiddle fas fa-search' style='font-size:24px; color:dimgrey'></i>
+                <input onfocus="doSearch()" class="searchField navSearchedInput" type="search" placeholder="جستجوی آموزش ...">
+            </div>
+            <a href="teaching.html" class="a_teaching"><i class='iconMiddle fas fa-chalkboard-teacher' style='font-size:22px;'></i>  تدریس در فرادرس </a>
+
+            <!-- <button id="beforeLoginBut" onclick="signIn()" type="submit" class="blueButton" style="flex-grow: 2; display: none;">ورود / ثبت نام</button> -->
+
+            <a class="navAccount" href="personalAccount.html">
+                <i class='iconMiddle far fa-user-circle' style='font-size:24px'></i>
+                <label for="">حساب کاربری</label>
+            </a>
+        </nav>
+    </section>
+    <div class="sidebarContainer">
+    
+        <div class="sidebar"> 
+            <button onclick="deActiveSidebar()">
+                <i class="fa fa-close" style="font-size:24px;color:gray"></i>
+            </button>
+            <div >
+                <a href="personalAccount.html"><i class='far fa-user-circle iconMiddle' style='font-size:24px'></i> حساب کاربری </a>
+            </div>
+            <div>
+                <a href="index.html#allEdu" > <i class='far fa-folder-open iconMiddle' style='font-size:24px'></i>  همه آموزش ها </a>
+            </div>
+            <div>
+                <a href="teaching.html"><i class='iconMiddle fas fa-chalkboard-teacher' style='font-size:22px;'></i>   تدریس در فرادرس</a>
+            </div>
+            <div id="logOut">
+                <a href="form.html"><i class='fas fa-sign-out-alt iconMiddle' style='font-size:22px'></i> خروج از حساب کاربری </a>
+            </div>
+        </div>
+    
+    </div>
+
+<!-- ////////////////////////////////////////////body///////////////////////////////////////////////////// -->
+
+<section id="contact">
+    <div id="aboutUsImage">
+        <img src="images/logo-faradars.webp" alt="">
+    </div>
+    <div id="address">
+        <div>
+            <i class='iconMiddle fas fa-phone' style='font-size:20px'></i>
+            <label for="">تماس بگیرید</label>
+            <p>۰۲۱-۵۷۹۱۶۰۰۰ (تهران)</p>
+        </div>
+        <div>
+            <i class='iconMiddle fas fa-comment-alt' style='font-size:24px'></i>
+            <label for="">مکاتبه ایمیلی</label>
+            <p>از طریق ایمیل:info@faradars.org</p>
+        </div>
+        <div>
+            <i class='iconMiddle fas fa-clock' style='font-size:24px'></i>
+            <label for="">ساعت کاری</label>
+            <p>شنبه تا چهارشنبه، ساعت ۷:۳۰ تا ۱۶:۳۰</p>
+            <p>پنجشنبه‌ها، ساعت ۷:۳۰ تا ۱۲:۳۰</p>
+        </div>
+        <div>
+            <i class='iconMiddle fas fa-building' style='font-size:24px'></i>
+            <label for="">نشانی</label>
+            <p>تهران، خیابان مطهری، خیابان کوه نور، پلاک ۴</p>
+        </div>
+    </div>
+    <div id="message" class="row">
+        <div class="messageDiv col-sm-6">
+            <label for="">نام و نام خانوادگی</label>
+            <input placeholder="به فارسی" type="text">
+        </div>
+        <div class="messageDiv col-sm-6">
+            <label for="">ایمیل</label>
+            <input type="text">
+        </div>
+        <div>
+            <label for="">شماره همراه</label>
+            <input type="text">
+        </div>
+        <div>
+            <label for="">موضوع</label>
+            <input type="text">
+        </div>
+        <div>
+            <label for="">متن پیام</label>
+            <textarea></textarea>
+        </div>
+        <button class="blueButton">ارسال پیام</button>
+    </div>
+
+</section>
+<section id="embededMap">
+    <div>
+     
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3239.0607300961874!2d51.420173075369696!3d35.72472492758415!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3f8e0165cb829411%3A0xb5dd73dd39d94a4!2sFaraDars!5e0!3m2!1sen!2s!4v1691589389020!5m2!1sen!2s" style="border:2px solid gray;border-radius: 5px;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+         
+        </div>
+</section>
+
+
+<!-- //////////////////////////////////////////////adver section////////////////////////////////////// -->
+<section class="adver">
+    <div class="row adver2">
+        <div class="col-md-6 adverText">
+            <h4>تدریس در فرادرس</h4>
+            <p>برای همکاری آموزشی، تدریس و ارایه آموزش در فرادرس و پیوستن به آن به عنوان عضو هیات علمی، به لینک زیر مراجعه کنید.</p>
+            <a href="teaching.html"><button class="blueButton"><i class='iconMiddle fas fa-chalkboard-teacher' style='font-size:20px; color: #fff;'></i> تدریس در فرادرس </button></a>
+        </div>
+        <div class="col-md-6">
+            <img src="body-img/teaching/tadris-dar-faradars-svg-01-(2)-1.webp" alt="">
+        </div>
+    </div>
+    <div class="row adver2">
+        <div class="col-md-6">
+            <img src="body-img/teaching/app(1).webp" alt="">
+        </div>
+        <div class="col-md-6 adverText">
+            <h4>اپلیکیشن فرادرس</h4>
+            <p> با دریافت و نصب اپلیکیشن فرادرس ، به راحتی در هر کجا و هر لحظه بر روی موبایل خود از تمامی امکانات فرادرس بهره‌مند شوید.
+                دانلود اپلیکیشن</p>
+            <a href="https://faradars.org/app"><button class="blueButton"><i class="fa fa-download" style="font-size:20px; color: #fff;"></i> دانلود اپلیکیشن </button></a>
+        </div>
+    </div>
+</section>
+
+<!-- ///////////////////////////////////////before footer///////////////////////////////////////////////// -->
+<section id="beforeFooter">
+
+    <div class="TemporaryAd">
+        <div>
+            <h5>به جامعه میلیونی دانشجویان فرادرس بپیوندید و به هزاران ساعت آموزش در حوزه‌های گوناگون دسترسی داشته باشید.</h5>
+        </div>
+        <a href="file:///D:/Atieh's%20Files/Final%20Project/form.html">
+            <button class="blueButton"> ورود و عضویت </button>
+        </a>
+    </div>
+        
+    <div class="PermanentAd ">
+        <div>
+            <img src="body-img/footer_advertising/صدها-هزار-دانشجو.webp" alt="">
+            <label for="">صدها هزار دانشجو</label>
+        </div>
+        <div>
+            <img src="body-img/footer_advertising/هزاران-ساعت-آموزش.webp" alt="">
+            <label for="">هزاران ساعت آموزش</label>
+        </div>
+        <div>
+            <img src="body-img/footer_advertising/دسترسی-همیشگی.webp" alt="">
+            <label for="">دسترسی همیشگی</label>
+        </div>
+        <div>
+            <img src="body-img/footer_advertising/دسترسی-آنی.webp" alt="">
+            <label for="">دسترسی آنی</label>
+        </div>
+        <div>
+            <img src="body-img/footer_advertising/تضمین-کیفیت.webp" alt="">
+            <label for="">تضمین کیفیت</label>
+        </div>
+    </div>
+</section>
+        <!-- //////////////////////////////////// footer section /////////////////////////////////////////// -->
+    <section id="footer">
+        <div  class="footerContainer">
+            <div class="footerSubContainer">
+                <div class="footerTag">
+                    <div class="footerLogo1">
+                        <img src="images/faradarslogo.svg" alt="">
+                    </div>
+                    <a href="aboutUs.html">
+                        <p><i class="iconMiddle fa fa-edit" style="font-size:24px;color:#000;"></i> درباره ی ما</p>
+                    </a>
+                    <a href="contactUs.html">
+                        <p><i class='iconMiddle fas fa-tty' style='font-size:24px; color:#000;'></i> تماس با ما</p>
+                    </a>
+                    <a href="aboutUs.html#opinion">
+                        <p><i class="iconMiddle fa fa-comments-o" style="font-size:24px;color:#000;"></i> ثبت نظرها</p>
+                    </a>
+                </div>
+                <div class="footerNews">
+                    <h5> <i class="iconMiddle fa fa-newspaper-o" style="font-size:24px; color:#000;"></i> عضویت در خبرنامه</h5>
+                    <input type="text" placeholder="آدرس پست الکترونیک">
+                    <button class="blueButton">ثبت نام</button>
+                </div>
+                <div class="footerLogos">
+                    <div class="footerLogo2">
+                        <img src="body-img/footer/5ff756287da19-nashr-min.webp" alt="">
+                        <img src="body-img/footer/logo.png" alt="">
+                    </div>
+                    <div class="footerLabel">
+                        <label for="">©فرادرس ۱۳۸۷-۱۴۰۲. تمامی حقوق محفوظ است.</label>
+                        <label for="">ساخته شده با <i style='font-size:16px;color:red' class='fas fa-heart'></i> در ایران</label>
+                    </div>
+                </div>
+            </div>
+
+ 
+        </div>
+
+    </section>
+
+        <section id="afterFooter" onmousemove="colorRange()">
+            <div>
+                <a href=""><i class="iconMiddle fa fa-envelope" style="font-size:36px"></i></a>
+                <a href="https://twitter.com/faradars"><i class='iconMiddle fab fa-twitter-square' style='font-size:36px'></i></a>
+                <a href="https://facebook.com/Faradars.org"><i class='iconMiddle fab fa-facebook-square' style='font-size:36px'></i></a>
+                <a href="https://www.youtube.com/c/faradarscourses/"><i class='iconMiddle fab fa-youtube' style='font-size:36px'></i></a>
+                <a href="https://instagram.com/faradars"><i class='iconMiddle fab fa-instagram' style='font-size:36px'></i></a>
+                <a href="https://t.me/faradars"><i class='iconMiddle fab fa-telegram-plane' style='font-size:36px'></i></a>
+            </div>
+        </section>
+    
+        <script src="main.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>
+    </body>
+</html>
